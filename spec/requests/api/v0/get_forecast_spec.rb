@@ -6,7 +6,7 @@ RSpec.describe 'Forecast API' do
       location = 'wadesville, in'
 
       get "/api/v0/forecast?location=#{location}"
-
+require 'pry'; binding.pry
       expect(response).to be_successful
       expect(response.status).to eq(200)
 
