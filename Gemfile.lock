@@ -170,6 +170,9 @@ GEM
       racc (~> 1.4)
     nokogiri (1.16.0-x86_64-linux)
       racc (~> 1.4)
+    orderly (0.1.1)
+      capybara (>= 1.1)
+      rspec (>= 2.14)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -223,6 +226,10 @@ GEM
     reline (0.4.2)
       io-console (~> 0.5)
     rexml (3.2.6)
+    rspec (3.12.0)
+      rspec-core (~> 3.12.0)
+      rspec-expectations (~> 3.12.0)
+      rspec-mocks (~> 3.12.0)
     rspec-core (3.12.2)
       rspec-support (~> 3.12.0)
     rspec-expectations (3.12.3)
@@ -286,6 +293,7 @@ DEPENDENCIES
   faraday
   jsonapi-serializer
   launchy
+  orderly
   pry
   puma (>= 5.0)
   rails (~> 7.1.2)
