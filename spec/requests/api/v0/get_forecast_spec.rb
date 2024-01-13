@@ -19,6 +19,7 @@ RSpec.describe 'Forecast API' do
       expect(forecast[:data][:type]).to eq('forecast')
       expect(forecast[:data]).to have_key :attributes 
 
+      expect(forecast[:data][:attributes]).to be_a Hash 
       expect(forecast[:data][:attributes]).to have_key :current_forecast
       expect(forecast[:data][:attributes][:current_forecast]).to be_a Hash
       expect(forecast[:data][:attributes]).to have_key :daily_forecast
@@ -31,8 +32,8 @@ RSpec.describe 'Forecast API' do
 
     it 'sad path- returns an error for no location given', :vcr do 
       location = ''
-
       get "/api/v0/forecast?location=#{location}"
+      
       expect(response).to_not be_successful
       expect(response.status).to eq(400)
 
