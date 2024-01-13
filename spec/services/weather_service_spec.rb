@@ -32,7 +32,35 @@ RSpec.describe WeatherService do
 
     it "returns daily weather data for a location with it's lat/lng", :vcr do 
       weather = WeatherService.daily_forecast(38.10984, -87.78929)
+      expect(weather).to be_a Hash 
+      expect(weather[:forecast]).to have_key :forecastday 
+      expect(weather[:forecast][:forecastday]).to be_a Array
+      expect(weather[:forecast][:forecastday].count).to eq 5
 
+      weather[:forecast][:forecastday].each do |day|
+        expect(day).to be_a Hash
+        expect(day).to have_key :date 
+        expect(day[:date]).to be_a String 
+        expect(day[:day]).to be_a Hash
+        expect(day[:day]).to have_key :maxtemp_f
+        expect(day[:day][:maxtemp_f]).to be_a Float
+        expect(day[:day]).to have_key :mintemp_f
+        expect(day[:day][:mintemp_f]).to be_a Float
+
+        expect(day[:day]).to have_key :condition
+        expect(day[:day][:condition]).to be_a Hash
+        expect(day[:day][:condition]).to have_key :text
+        expect(day[:day][:condition][:text]).to be_a String
+        expect(day[:day][:condition]).to have_key :icon
+        expect(day[:day][:condition][:icon]).to be_a String
+
+        expect(day).to have_key :astro
+        expect(day[:astro]).to be_a Hash
+        expect(day[:astro]).to have_key :sunrise
+        expect(day[:astro][:sunrise]).to be_a String
+        expect(day[:astro]).to have_key :sunset
+        expect(day[:astro][:sunset]).to be_a String
+      end 
     end
 
     it "returns hourly weather data for a location with it's lat/lng", :vcr do 
