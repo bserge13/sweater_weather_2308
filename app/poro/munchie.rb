@@ -11,6 +11,5 @@ class Munchie
     @destination_city = destination
     @forecast = forecast
     @restaurant = munchie_data
-    require 'pry'; binding.pry
   end
 end
