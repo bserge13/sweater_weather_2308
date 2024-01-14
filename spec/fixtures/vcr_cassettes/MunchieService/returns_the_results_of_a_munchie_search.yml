@@ -1,0 +1,506 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=Santa%20Rita,%20Guam&term=Filapino
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer YUh6t8SRIA4qQIOHWCCG2RgF4mqeR2AJewalPI1iPMVSsjPp32MxIVIMnSYmxsQtCmKikssBrLDQBRL0K5Z90y_neWh0bznyoWRIejZbZfDXxFrvmfY2cYXlrjikZXYx
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '490.0'
+      Ratelimit-Resettime:
+      - '2024-01-15T00:00:00+00:00'
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - fb4f130d82b1cdf7
+      X-Routing-Service:
+      - routing-main--useast1-74f644dc4b-2rzrx; site=public_api_v3
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-172-176-useast1bprod
+      X-Extlb:
+      - 10-65-172-176-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 14 Jan 2024 23:03:03 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-cmh1290077-CMH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [], "total": 0, "region": {"center": {"longitude": 144.67157363891602,
+        "latitude": 13.386780574283616}}}'
+  recorded_at: Sun, 14 Jan 2024 23:03:03 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=Guam&term=Filapino
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer YUh6t8SRIA4qQIOHWCCG2RgF4mqeR2AJewalPI1iPMVSsjPp32MxIVIMnSYmxsQtCmKikssBrLDQBRL0K5Z90y_neWh0bznyoWRIejZbZfDXxFrvmfY2cYXlrjikZXYx
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '489.0'
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-74f644dc4b-vqsp4; site=public_api_v3
+      X-Zipkin-Id:
+      - 6271792ed289ae83
+      Ratelimit-Resettime:
+      - '2024-01-15T00:00:00+00:00'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-92-52-useast1aprod
+      X-Extlb:
+      - 10-65-92-52-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 14 Jan 2024 23:03:29 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-cmh1290056-CMH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [], "total": 0, "region": {"center": {"longitude": 144.788818359375,
+        "latitude": 13.442717225538974}}}'
+  recorded_at: Sun, 14 Jan 2024 23:03:29 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=Culumbo,%20Sri%20Lanka&term=German
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer YUh6t8SRIA4qQIOHWCCG2RgF4mqeR2AJewalPI1iPMVSsjPp32MxIVIMnSYmxsQtCmKikssBrLDQBRL0K5Z90y_neWh0bznyoWRIejZbZfDXxFrvmfY2cYXlrjikZXYx
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '123'
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - 6b0fbf91267cec99
+      X-B3-Sampled:
+      - '0'
+      X-Routing-Service:
+      - routing-main--useast1-74f644dc4b-d5pwf; site=public_api_v3
+      Server:
+      - envoy
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-92-52-useast1aprod
+      X-Extlb:
+      - 10-65-92-52-useast1aprod
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 14 Jan 2024 23:04:06 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-cmh1290056-CMH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"error": {"code": "LOCATION_NOT_FOUND", "description": "Could not
+        execute search, try specifying a more exact location."}}'
+  recorded_at: Sun, 14 Jan 2024 23:04:06 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=Sri%20Lanka&term=German
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer YUh6t8SRIA4qQIOHWCCG2RgF4mqeR2AJewalPI1iPMVSsjPp32MxIVIMnSYmxsQtCmKikssBrLDQBRL0K5Z90y_neWh0bznyoWRIejZbZfDXxFrvmfY2cYXlrjikZXYx
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '123'
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - e2a53323b5d14455
+      X-B3-Sampled:
+      - '0'
+      Server:
+      - envoy
+      X-Routing-Service:
+      - routing-main--useast1-74f644dc4b-gxxcb; site=public_api_v3
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-113-124-useast1aprod
+      X-Extlb:
+      - 10-65-113-124-useast1aprod
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 14 Jan 2024 23:04:22 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-cmh1290077-CMH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"error": {"code": "LOCATION_NOT_FOUND", "description": "Could not
+        execute search, try specifying a more exact location."}}'
+  recorded_at: Sun, 14 Jan 2024 23:04:22 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=Santa%20Rita,%20Guam&term=mexican
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer YUh6t8SRIA4qQIOHWCCG2RgF4mqeR2AJewalPI1iPMVSsjPp32MxIVIMnSYmxsQtCmKikssBrLDQBRL0K5Z90y_neWh0bznyoWRIejZbZfDXxFrvmfY2cYXlrjikZXYx
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - bb3758e24577f74d
+      Ratelimit-Remaining:
+      - '486.0'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2024-01-15T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--useast1-74f644dc4b-tjnzj; site=public_api_v3
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-176-91-useast1bprod
+      X-Extlb:
+      - 10-65-176-91-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 14 Jan 2024 23:04:56 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-cmh1290080-CMH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "77L4eeAHh05E_9q9rnNfeQ", "alias": "buen-provecho-taco-shack-agat",
+        "name": "Buen Provecho Taco Shack", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/kplqtLb6uyiZCrTWwOl0aA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/buen-provecho-taco-shack-agat?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 51, "categories": [{"alias": "tacos", "title": "Tacos"}, {"alias":
+        "foodstands", "title": "Food Stands"}], "rating": 4.0, "coordinates": {"latitude":
+        13.3989529320449, "longitude": 144.663711631541}, "transactions": [], "price":
+        "$$", "location": {"address1": "Route 2", "address2": "", "address3": null,
+        "city": "Agat", "zip_code": "", "country": "GU", "state": "GU", "display_address":
+        ["Route 2", "Agat, Guam"]}, "phone": "+16719698226", "display_phone": "+1
+        671-969-8226", "distance": 1598.504966975197}, {"id": "yeczzULoehWJwWQqtaLgMQ",
+        "alias": "caliente-mexican-taqueria-hag\u00e5t\u00f1a", "name": "Caliente
+        Mexican Taqueria", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/BPt_aaEi1gEqQTXt5KSFMA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/caliente-mexican-taqueria-hag%C3%A5t%C3%B1a?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 171, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.0, "coordinates": {"latitude": 13.4759154, "longitude": 144.752683},
+        "transactions": [], "price": "$$", "location": {"address1": "135 Archbishop
+        Flores Street", "address2": "", "address3": "", "city": "Hag\u00e5t\u00f1a",
+        "zip_code": "96910", "country": "GU", "state": "GU", "display_address": ["135
+        Archbishop Flores Street", "Hag\u00e5t\u00f1a, Guam 96910"]}, "phone": "+16714774681",
+        "display_phone": "+1 671-477-4681", "distance": 13235.82299305167}, {"id":
+        "4l_l22G0Kx9ddLaW0eSyug", "alias": "tacos-sinaloa-tumon", "name": "Tacos Sinaloa",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/9AZPWEwO2qaO12ZyKEi8sg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tacos-sinaloa-tumon?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 131, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.0, "coordinates": {"latitude": 13.50798997827062, "longitude":
+        144.80418211631218}, "transactions": [], "price": "$$", "location": {"address1":
+        "1010 La Isla Plaza", "address2": "Suite 102", "address3": "", "city": "Tumon",
+        "zip_code": "96913", "country": "GU", "state": "GU", "display_address": ["1010
+        La Isla Plaza", "Suite 102", "Tumon, Guam 96913"]}, "phone": "+16716488226",
+        "display_phone": "+1 671-648-8226", "distance": 19680.447556623894}, {"id":
+        "2iTa_LvNheB2Sd3hvBAPhQ", "alias": "gringo-s-taqueria-dededo", "name": "Gringo\u2019s
+        Taqueria", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/y-GpiJYZ2h1lRDEz1s-YIA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/gringo-s-taqueria-dededo?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 3, "categories": [{"alias": "tacos", "title": "Tacos"}], "rating":
+        3.0, "coordinates": {"latitude": 13.51044907158327, "longitude": 144.8207198467954},
+        "transactions": [], "location": {"address1": "GR69+2XX", "address2": "", "address3":
+        null, "city": "Dededo", "zip_code": "96929", "country": "GU", "state": "GU",
+        "display_address": ["GR69+2XX", "Dededo, Guam 96929"]}, "phone": "", "display_phone":
+        "", "distance": 21195.74264050917}, {"id": "1hrDUpqdWiNGWECw49l4RQ", "alias":
+        "mi-sazon-mexican-grill-tamuning", "name": "Mi Sazon Mexican Grill", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/y_x_ysMx-PifA6vWgtwf9g/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/mi-sazon-mexican-grill-tamuning?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 48, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 3.0, "coordinates": {"latitude": 13.508004, "longitude": 144.803229},
+        "transactions": [], "price": "$$", "location": {"address1": "962 Pale San
+        Vitores Road", "address2": "Suite 101", "address3": null, "city": "Tamuning",
+        "zip_code": "96913", "country": "GU", "state": "GU", "display_address": ["962
+        Pale San Vitores Road", "Suite 101", "Tamuning, Guam 96913"]}, "phone": "+16716456472",
+        "display_phone": "+1 671-645-6472", "distance": 19606.534932724928}, {"id":
+        "m8ZQTHIZbsBIAe74GuCUBw", "alias": "manang-pikas-hag\u00e5t\u00f1a", "name":
+        "Manang Pika''s", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/2QAXa1722bMFLTevUekMRA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/manang-pikas-hag%C3%A5t%C3%B1a?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 1, "categories": [{"alias": "tacos", "title": "Tacos"}], "rating":
+        5.0, "coordinates": {"latitude": 13.474452079379386, "longitude": 144.75024536310204},
+        "transactions": [], "location": {"address1": "", "address2": "", "address3":
+        null, "city": "Hag\u00e5t\u00f1a", "zip_code": "96910", "country": "GU", "state":
+        "GU", "display_address": ["Hag\u00e5t\u00f1a, Guam 96910"]}, "phone": "+16714828861",
+        "display_phone": "+1 671-482-8861", "distance": 12939.574850830373}, {"id":
+        "jNkU4hUpXgSqxOjkOSB8bA", "alias": "pikas-cafe-tamuning", "name": "Pika''s
+        Cafe", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/LG5bi7i3a_XeTn_XpqEkUw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/pikas-cafe-tamuning?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 339, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
+        {"alias": "cafes", "title": "Cafes"}, {"alias": "breakfast_brunch", "title":
+        "Breakfast & Brunch"}], "rating": 4.5, "coordinates": {"latitude": 13.5076590252573,
+        "longitude": 144.810293600881}, "transactions": [], "price": "$$", "location":
+        {"address1": "888 N Marine Corps Dr", "address2": "Suite 114", "address3":
+        "Star Building", "city": "Tamuning", "zip_code": "96931", "country": "GU",
+        "state": "GU", "display_address": ["888 N Marine Corps Dr", "Suite 114", "Star
+        Building", "Tamuning, Guam 96931"]}, "phone": "+16716477452", "display_phone":
+        "+1 671-647-7452", "distance": 20142.58164439179}, {"id": "o7yxMQEQyGpLfwx7PI3BVA",
+        "alias": "fusion-tavern-i-tamuning", "name": "Fusion Tavern I", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/hwi8fjE-FHsJIt80Wc2hfg/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/fusion-tavern-i-tamuning?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 39, "categories": [{"alias": "bars", "title": "Bars"}, {"alias":
+        "burgers", "title": "Burgers"}, {"alias": "asianfusion", "title": "Asian Fusion"}],
+        "rating": 4.5, "coordinates": {"latitude": 13.5087745046441, "longitude":
+        144.803858506231}, "transactions": [], "price": "$$", "location": {"address1":
+        "Fujita Road", "address2": "", "address3": "", "city": "Tamuning", "zip_code":
+        "96931", "country": "GU", "state": "GU", "display_address": ["Fujita Road",
+        "Tamuning, Guam 96931"]}, "phone": "+16716492343", "display_phone": "+1 671-649-2343",
+        "distance": 19714.864194136808}, {"id": "l7XU9O6zaFmfZZyOoI4q9w", "alias":
+        "tumon-tacos-by-sea-grill-tamuning", "name": "Tumon Tacos by Sea Grill", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/qC_q0pOLzP4gaj1gvxh3qQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/tumon-tacos-by-sea-grill-tamuning?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 2, "categories": [{"alias": "tacos", "title": "Tacos"}], "rating":
+        3.5, "coordinates": {"latitude": 13.51399, "longitude": 144.80564}, "transactions":
+        [], "location": {"address1": "1245 Pale San Vitores Rd", "address2": "", "address3":
+        null, "city": "Tamuning", "zip_code": "96913", "country": "US", "state": "AL",
+        "display_address": ["1245 Pale San Vitores Rd", "Tamuning, AL 96913"]}, "phone":
+        "", "display_phone": "", "distance": 20283.29610346125}, {"id": "fD00YKzhX1MMF2rQaVCdzQ",
+        "alias": "tumon-taco-by-seagrill-tamuning", "name": "Tumon Taco By SeaGrill",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/KYTe_PbbBTiP2qiFuhlZ_Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tumon-taco-by-seagrill-tamuning?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 8, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 3.0, "coordinates": {"latitude": 13.5143149, "longitude": 144.8055907},
+        "transactions": [], "price": "$", "location": {"address1": "1245 Pale San
+        Vitores Road", "address2": "", "address3": null, "city": "Tamuning", "zip_code":
+        "96913", "country": "GU", "state": "GU", "display_address": ["1245 Pale San
+        Vitores Road", "Tamuning, Guam 96913"]}, "phone": "+16716496637", "display_phone":
+        "+1 671-649-6637", "distance": 20277.067198950703}, {"id": "DcliS24e0nf4J9YTPqqpFg",
+        "alias": "world-cafe-tumon", "name": "World Cafe", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/w1O2GaUadXnzINwTK7RdMw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/world-cafe-tumon?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 11, "categories": [{"alias": "buffets", "title": "Buffets"},
+        {"alias": "asianfusion", "title": "Asian Fusion"}, {"alias": "salad", "title":
+        "Salad"}], "rating": 3.0, "coordinates": {"latitude": 13.5061918168659, "longitude":
+        144.798403200139}, "transactions": [], "price": "$$$", "location": {"address1":
+        "801 Pale San Vitores Rd", "address2": "", "address3": "Fiesta Resort", "city":
+        "Tumon", "zip_code": "96913", "country": "GU", "state": "GU", "display_address":
+        ["801 Pale San Vitores Rd", "Fiesta Resort", "Tumon, Guam 96913"]}, "phone":
+        "+16716465881", "display_phone": "+1 671-646-5881", "distance": 19090.228653660306},
+        {"id": "BOWzx5iufCG2b2grzNp01g", "alias": "beachin-shrimp-tumon", "name":
+        "Beachin'' Shrimp", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/we9T0Y7zyOpLGL904r_LFg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/beachin-shrimp-tumon?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 44, "categories": [{"alias": "seafood", "title": "Seafood"}],
+        "rating": 3.5, "coordinates": {"latitude": 13.5136141050018, "longitude":
+        144.805811337543}, "transactions": [], "price": "$$", "location": {"address1":
+        "The Plaza", "address2": "1225 Pale San Vitores Road", "address3": "", "city":
+        "Tumon", "zip_code": "96913", "country": "GU", "state": "GU", "display_address":
+        ["The Plaza", "1225 Pale San Vitores Road", "Tumon, Guam 96913"]}, "phone":
+        "+16716423224", "display_phone": "+1 671-642-3224", "distance": 20239.76849087425},
+        {"id": "37UFDgBtdf_LV9c6O9sa-g", "alias": "beachin-shrimp-tamuning-3", "name":
+        "Beachin'' Shrimp", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/AbrxpeurMvA785uo_hyGFw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/beachin-shrimp-tamuning-3?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 8, "categories": [{"alias": "seafood", "title": "Seafood"}],
+        "rating": 3.5, "coordinates": {"latitude": 13.5016218264851, "longitude":
+        144.79274712503}, "transactions": [], "location": {"address1": "Flame Tree
+        Plaza", "address2": "210 Pale San Vitores Rd", "address3": null, "city": "Tamuning",
+        "zip_code": "96913", "country": "GU", "state": "GU", "display_address": ["Flame
+        Tree Plaza", "210 Pale San Vitores Rd", "Tamuning, Guam 96913"]}, "phone":
+        "+16719893224", "display_phone": "+1 671-989-3224", "distance": 18297.48389042585},
+        {"id": "7UT0RPKy1iOgd5MdBPGcFg", "alias": "taco-bell-dededo-2", "name": "Taco
+        Bell", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/x_kzHCmxb3LGwz2aZQARSA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/taco-bell-dededo-2?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 1, "categories": [{"alias": "tacos", "title": "Tacos"}], "rating":
+        3.0, "coordinates": {"latitude": 13.5201730417514, "longitude": 144.817931056023},
+        "transactions": [], "location": {"address1": "1088 West Marine Corps Dr",
+        "address2": "Ste 2F/FC", "address3": "Micronesia Mall", "city": "Dededo",
+        "zip_code": "96929", "country": "GU", "state": "GU", "display_address": ["1088
+        West Marine Corps Dr", "Ste 2F/FC", "Micronesia Mall", "Dededo, Guam 96929"]},
+        "phone": "+16716374332", "display_phone": "+1 671-637-4332", "distance": 21691.415650789273},
+        {"id": "tU8XaymZy37kmIRyVScNZA", "alias": "taco-bell-dededo", "name": "Taco
+        Bell", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/xeQEq4B1bUMC_W03j_J2YQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/taco-bell-dededo?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 8, "categories": [{"alias": "hotdogs", "title": "Fast Food"},
+        {"alias": "mexican", "title": "Mexican"}], "rating": 2.5, "coordinates": {"latitude":
+        13.5138791238156, "longitude": 144.839097370443}, "transactions": [], "price":
+        "$$", "location": {"address1": "132 W Marine Corps Dr", "address2": "", "address3":
+        "", "city": "Dededo", "zip_code": "96929", "country": "GU", "state": "GU",
+        "display_address": ["132 W Marine Corps Dr", "Dededo, Guam 96929"]}, "phone":
+        "", "display_phone": "", "distance": 22977.22891847651}, {"id": "yWkI2n0MNNwmhhVa6yxF9A",
+        "alias": "taco-bell-hag\u00e5t\u00f1a", "name": "Taco Bell", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/bphoto/h2gPkxgZqIf4dYTp-kjXgg/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/taco-bell-hag%C3%A5t%C3%B1a?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 5, "categories": [{"alias": "hotdogs", "title": "Fast Food"},
+        {"alias": "mexican", "title": "Mexican"}], "rating": 1.0, "coordinates": {"latitude":
+        13.4714669128159, "longitude": 144.754679873586}, "transactions": [], "location":
+        {"address1": "Hagatna Shopping Center", "address2": "Fronting Route 4", "address3":
+        "", "city": "Hag\u00e5t\u00f1a", "zip_code": "96910", "country": "GU", "state":
+        "GU", "display_address": ["Hagatna Shopping Center", "Fronting Route 4", "Hag\u00e5t\u00f1a,
+        Guam 96910"]}, "phone": "", "display_phone": "", "distance": 13017.820419016314},
+        {"id": "2BQu8AgXRwyLj6zLzGL6og", "alias": "taco-bell-tamuning", "name": "Taco
+        Bell", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/pMgz6ZHucUVgT2w7VLp2Ig/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/taco-bell-tamuning?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 4, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 3.5, "coordinates": {"latitude": 13.4916633110145, "longitude":
+        144.780793190002}, "transactions": [], "price": "$", "location": {"address1":
+        "Chalan San Antonio", "address2": "", "address3": "", "city": "Tamuning",
+        "zip_code": "96931", "country": "GU", "state": "GU", "display_address": ["Chalan
+        San Antonio", "Tamuning, Guam 96931"]}, "phone": "", "display_phone": "",
+        "distance": 16599.31763842823}, {"id": "mayX_KGNxUWCjyTrsuhNeA", "alias":
+        "taco-bell-mangilao", "name": "Taco Bell", "image_url": "", "is_closed": false,
+        "url": "https://www.yelp.com/biz/taco-bell-mangilao?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 4, "categories": [{"alias": "mexican", "title": "Mexican"}],
+        "rating": 4.0, "coordinates": {"latitude": 13.4376982170348, "longitude":
+        144.795146295842}, "transactions": [], "location": {"address1": "124 Jesus
+        Mariano Street", "address2": "Suite 101", "address3": "", "city": "Mangilao",
+        "zip_code": "96913", "country": "GU", "state": "GU", "display_address": ["124
+        Jesus Mariano Street", "Suite 101", "Mangilao, Guam 96913"]}, "phone": "+16717340016",
+        "display_phone": "+1 671-734-0016", "distance": 14515.593388786037}], "total":
+        18, "region": {"center": {"longitude": 144.67157363891602, "latitude": 13.386780574283616}}}'
+  recorded_at: Sun, 14 Jan 2024 23:04:56 GMT
+recorded_with: VCR 6.2.0
