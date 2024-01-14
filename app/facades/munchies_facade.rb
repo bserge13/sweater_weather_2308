@@ -14,12 +14,12 @@ class MunchiesFacade
     munchie_data = results[:businesses].map do |restaurant|
       { 
         name: restaurant[:name],
-        address: restaurant[:location][:display_address],
+        address: restaurant[:location][:display_address][0],
         rating: restaurant[:rating],
         reviews: restaurant[:review_count]
       }
     end
 
-    Munchie.new(forecast, destination, munchie_data)
+    Munchie.new(destination, forecast, munchie_data)
   end
 end

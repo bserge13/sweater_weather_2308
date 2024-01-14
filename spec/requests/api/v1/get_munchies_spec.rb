@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Munchie API' do 
   describe 'Munchies search request' do 
     it 'returns suggested places to eat based off category and location', :vcr do 
-      location = 'henderson, ky'
+      location = 'Evansville, IN'
       food = 'italian' 
 
       get "/api/v1/munchies?destination=#{location}&food=#{food}"
@@ -13,6 +13,7 @@ RSpec.describe 'Munchie API' do
       results = JSON.parse(response.body, symbolize_names: true)
 
       expect(results).to be_a Hash 
+      require 'pry'; binding.pry
     end
   end
 end
