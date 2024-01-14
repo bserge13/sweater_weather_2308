@@ -1,4 +1,4 @@
-class MunchiesFacade 
+class MunchieFacade 
   def self.munchie_search(destination, food)
     coordinates = MapQuestService.coordinates(destination)
     lat = coordinates[:results][0][:locations][0][:latLng][:lat]
@@ -10,7 +10,7 @@ class MunchiesFacade
       temperature: weather[:current][:temp_f]
     }
 
-    results = MunchiesService.find_food(destination, food) 
+    results = MunchieService.find_food(destination, food) 
     munchie_data = results[:businesses].map do |restaurant|
       { 
         name: restaurant[:name],

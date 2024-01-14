@@ -1,0 +1,381 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?key=MXpGQNEnD9B2S5o0AFDBlpUh2UjbVpUg&location=Poseyville,%20IN
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 14 Jan 2024 22:49:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '801'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '1000000000'
+      X-Ratelimit-Remaining-2628000:
+      - '999999974'
+      Ratelimit-Limit:
+      - '1000000000'
+      Ratelimit-Remaining:
+      - '999999974'
+      Ratelimit-Reset:
+      - '299441'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 27440cb0-b32f-11ee-b47d-ff8c59d5896a
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"321-9+49CsEeR1Kfetv3C67FP8CpWfE"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyNCBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDI0IE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJQb3NleXZpbGxlLCBJTiJ9LCJsb2NhdGlvbnMiOlt7InN0cmVldCI6IiIsImFkbWluQXJlYTYiOiIiLCJhZG1pbkFyZWE2VHlwZSI6Ik5laWdoYm9yaG9vZCIsImFkbWluQXJlYTUiOiJQb3NleXZpbGxlIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IlBvc2V5IiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJhZG1pbkFyZWEzIjoiSU4iLCJhZG1pbkFyZWEzVHlwZSI6IlN0YXRlIiwiYWRtaW5BcmVhMSI6IlVTIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwicG9zdGFsQ29kZSI6IiIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IkE1WEFYIiwiZ2VvY29kZVF1YWxpdHkiOiJDSVRZIiwiZHJhZ1BvaW50IjpmYWxzZSwic2lkZU9mU3RyZWV0IjoiTiIsImxpbmtJZCI6IjAiLCJ1bmtub3duSW5wdXQiOiIiLCJ0eXBlIjoicyIsImxhdExuZyI6eyJsYXQiOjM4LjE2OTgsImxuZyI6LTg3Ljc4NDQ2fSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjM4LjE2OTgsImxuZyI6LTg3Ljc4NDQ2fSwibWFwVXJsIjoiIn1dfV19
+  recorded_at: Sun, 14 Jan 2024 22:49:19 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/current.json?key=db2e7bac77164ad99e115641241301&q=38.1698,-87.78446
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 14 Jan 2024 22:49:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-IL1-1069
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=180
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Weatherapi-Qpm-Left:
+      - '4999966'
+      X-Varnish:
+      - '150308449'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - 01/14/2024 22:49:20
+      Cdn-Edgestorageid:
+      - '894'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - d41bd1ef6f763fad8da9d38e38c3d203
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"location":{"name":"Poseyville","region":"Indiana","country":"United
+        States of America","lat":38.17,"lon":-87.78,"tz_id":"America/Chicago","localtime_epoch":1705272522,"localtime":"2024-01-14
+        16:48"},"current":{"last_updated_epoch":1705272300,"last_updated":"2024-01-14
+        16:45","temp_c":-13.3,"temp_f":8.1,"is_day":1,"condition":{"text":"Overcast","icon":"//cdn.weatherapi.com/weather/64x64/day/122.png","code":1009},"wind_mph":6.9,"wind_kph":11.2,"wind_degree":310,"wind_dir":"NW","pressure_mb":1028.0,"pressure_in":30.36,"precip_mm":0.0,"precip_in":0.0,"humidity":57,"cloud":100,"feelslike_c":-21.6,"feelslike_f":-6.8,"vis_km":16.0,"vis_miles":9.0,"uv":1.0,"gust_mph":13.0,"gust_kph":20.9}}'
+  recorded_at: Sun, 14 Jan 2024 22:49:20 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=Poseyville,%20IN&term=Pizza
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer YUh6t8SRIA4qQIOHWCCG2RgF4mqeR2AJewalPI1iPMVSsjPp32MxIVIMnSYmxsQtCmKikssBrLDQBRL0K5Z90y_neWh0bznyoWRIejZbZfDXxFrvmfY2cYXlrjikZXYx
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Remaining:
+      - '491.0'
+      X-Routing-Service:
+      - routing-main--useast1-74f644dc4b-gxxcb; site=public_api_v3
+      Ratelimit-Resettime:
+      - '2024-01-15T00:00:00+00:00'
+      X-Zipkin-Id:
+      - 273579e0f3fc8253
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-B3-Sampled:
+      - '0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-92-52-useast1aprod
+      X-Extlb:
+      - 10-65-92-52-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 14 Jan 2024 22:49:21 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-cmh1290063-CMH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "jhkQ2wbwSB8r4U42qoXRNw", "alias": "p-js-pizza-cynthiana",
+        "name": "P J''s Pizza", "image_url": "", "is_closed": false, "url": "https://www.yelp.com/biz/p-js-pizza-cynthiana?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 2, "categories": [{"alias": "pizza", "title": "Pizza"}], "rating":
+        4.5, "coordinates": {"latitude": 38.1890907, "longitude": -87.7082291}, "transactions":
+        [], "location": {"address1": "10463 Whiting St", "address2": "", "address3":
+        "", "city": "Cynthiana", "zip_code": "47612", "country": "US", "state": "IN",
+        "display_address": ["10463 Whiting St", "Cynthiana, IN 47612"]}, "phone":
+        "+18128453355", "display_phone": "(812) 845-3355", "distance": 6793.60431237278},
+        {"id": "bPbabkCz2LuuIcfCvbzw9Q", "alias": "susan-bobes-pizza-princeton", "name":
+        "Susan Bobe''s Pizza", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Oj4izS10R2esIKWefUyAYw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/susan-bobes-pizza-princeton?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 16, "categories": [{"alias": "pizza", "title": "Pizza"}, {"alias":
+        "sandwiches", "title": "Sandwiches"}, {"alias": "salad", "title": "Salad"}],
+        "rating": 4.0, "coordinates": {"latitude": 38.3550026, "longitude": -87.5676911},
+        "transactions": [], "price": "$$", "location": {"address1": "101 W Broadway
+        St", "address2": "", "address3": "", "city": "Princeton", "zip_code": "47670",
+        "country": "US", "state": "IN", "display_address": ["101 W Broadway St", "Princeton,
+        IN 47670"]}, "phone": "+18123852554", "display_phone": "(812) 385-2554", "distance":
+        27799.893982027286}, {"id": "jp5PZRkW85BduhwJnZp_ng", "alias": "dimaggios-pizza-carmi",
+        "name": "Dimaggio''s Pizza", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/dLVh3Tk021_zQmDtLAjzMA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/dimaggios-pizza-carmi?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 25, "categories": [{"alias": "pizza", "title": "Pizza"}],
+        "rating": 4.5, "coordinates": {"latitude": 38.0806747397254, "longitude":
+        -88.1743709007532}, "transactions": [], "price": "$$", "location": {"address1":
+        "100 April Ave", "address2": "", "address3": "", "city": "Carmi", "zip_code":
+        "62821", "country": "US", "state": "IL", "display_address": ["100 April Ave",
+        "Carmi, IL 62821"]}, "phone": "+16183828912", "display_phone": "(618) 382-8912",
+        "distance": 35724.62025712985}, {"id": "SDYgN69OvJQwEZnW7F9Fag", "alias":
+        "sandys-pizza-fort-branch", "name": "Sandy''s Pizza", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/SOABL29O8jooF7T_lLa4cQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/sandys-pizza-fort-branch?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 37, "categories": [{"alias": "pizza", "title": "Pizza"}],
+        "rating": 3.0, "coordinates": {"latitude": 38.242032, "longitude": -87.578283},
+        "transactions": [], "price": "$$", "location": {"address1": "609 S Main St",
+        "address2": "", "address3": "", "city": "Fort Branch", "zip_code": "47648",
+        "country": "US", "state": "IN", "display_address": ["609 S Main St", "Fort
+        Branch, IN 47648"]}, "phone": "+18127533972", "display_phone": "(812) 753-3972",
+        "distance": 19520.96304382814}, {"id": "D65yvErJ_lepsjCTD6k2zg", "alias":
+        "roscoe-and-sons-pizza-princeton", "name": "Roscoe & Sons'' Pizza", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/_2GnYP4Fk9RCw01FYZG4xQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/roscoe-and-sons-pizza-princeton?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 2, "categories": [{"alias": "pizza", "title": "Pizza"}], "rating":
+        5.0, "coordinates": {"latitude": 38.35516401850324, "longitude": -87.56704803224186},
+        "transactions": [], "location": {"address1": "111 E Broadway St", "address2":
+        "", "address3": null, "city": "Princeton", "zip_code": "47240", "country":
+        "US", "state": "IN", "display_address": ["111 E Broadway St", "Princeton,
+        IN 47240"]}, "phone": "+18126350188", "display_phone": "(812) 635-0188", "distance":
+        27850.975751694226}, {"id": "zwbX0qfuKWpuXSFvOGTjwg", "alias": "dimaggios-italian-mount-vernon",
+        "name": "DiMaggio''s Italian", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/vH39Y4xSIqgU0sIznKyU7A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/dimaggios-italian-mount-vernon?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 5, "categories": [{"alias": "pizza", "title": "Pizza"}], "rating":
+        4.5, "coordinates": {"latitude": 37.941153, "longitude": -87.896911}, "transactions":
+        [], "location": {"address1": "1244 Main St", "address2": "", "address3": null,
+        "city": "Mount Vernon", "zip_code": "47620", "country": "US", "state": "IN",
+        "display_address": ["1244 Main St", "Mount Vernon, IN 47620"]}, "phone": "+18128389850",
+        "display_phone": "(812) 838-9850", "distance": 27379.031824590693}, {"id":
+        "VifBR9Cu2dSwXgoX2JnNmg", "alias": "rosatis-pizza-mount-carmel", "name": "Rosati''s
+        Pizza", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/HjA4STZy5dr2j97VSIersg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/rosatis-pizza-mount-carmel?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 2, "categories": [{"alias": "pizza", "title": "Pizza"}, {"alias":
+        "sportsbars", "title": "Sports Bars"}, {"alias": "italian", "title": "Italian"}],
+        "rating": 5.0, "coordinates": {"latitude": 38.413629, "longitude": -87.769501},
+        "transactions": [], "location": {"address1": "411 W 9th St", "address2": "",
+        "address3": null, "city": "Mount Carmel", "zip_code": "62863", "country":
+        "US", "state": "IL", "display_address": ["411 W 9th St", "Mount Carmel, IL
+        62863"]}, "phone": "+16182620009", "display_phone": "(618) 262-0009", "distance":
+        27088.596271006674}, {"id": "k3qHB6AdarOOlBizgT8ajw", "alias": "dontaes-pizza-parlor-evansville",
+        "name": "Dontaes Pizza Parlor", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/CJHhCW0B2izXX708HVECkA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/dontaes-pizza-parlor-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 11, "categories": [{"alias": "pizza", "title": "Pizza"}, {"alias":
+        "salad", "title": "Salad"}, {"alias": "sandwiches", "title": "Sandwiches"}],
+        "rating": 4.5, "coordinates": {"latitude": 38.039538710179016, "longitude":
+        -87.5743614}, "transactions": ["pickup", "delivery"], "location": {"address1":
+        "6669 Kratzville Rd", "address2": null, "address3": "", "city": "Evansville",
+        "zip_code": "47710", "country": "US", "state": "IN", "display_address": ["6669
+        Kratzville Rd", "Evansville, IN 47710"]}, "phone": "+18127770016", "display_phone":
+        "(812) 777-0016", "distance": 23271.515405410257}, {"id": "aZ2Tbl9z64pZi-Ev5gDB_Q",
+        "alias": "kellyos-pizza-mount-carmel", "name": "Kellyo''s Pizza", "image_url":
+        "", "is_closed": false, "url": "https://www.yelp.com/biz/kellyos-pizza-mount-carmel?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 3, "categories": [{"alias": "pizza", "title": "Pizza"}], "rating":
+        4.5, "coordinates": {"latitude": 38.4136540734904, "longitude": -87.7637049283111},
+        "transactions": [], "location": {"address1": "702 N Market St", "address2":
+        "", "address3": "", "city": "Mount Carmel", "zip_code": "62863", "country":
+        "US", "state": "IL", "display_address": ["702 N Market St", "Mount Carmel,
+        IL 62863"]}, "phone": "+16182628333", "display_phone": "(618) 262-8333", "distance":
+        27119.3360029961}, {"id": "Kpx62361SvgLOL0zRtWRXw", "alias": "papa-johns-pizza-princeton-2",
+        "name": "Papa Johns Pizza", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/SDMmGrg-25ewikkT6fbgIQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/papa-johns-pizza-princeton-2?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 5, "categories": [{"alias": "pizza", "title": "Pizza"}, {"alias":
+        "chicken_wings", "title": "Chicken Wings"}, {"alias": "hotdogs", "title":
+        "Fast Food"}], "rating": 3.5, "coordinates": {"latitude": 38.35422, "longitude":
+        -87.60503}, "transactions": ["pickup"], "price": "$", "location": {"address1":
+        "2805 W Broadway St", "address2": "", "address3": "", "city": "Princeton",
+        "zip_code": "47670", "country": "US", "state": "IN", "display_address": ["2805
+        W Broadway St", "Princeton, IN 47670"]}, "phone": "+18123855050", "display_phone":
+        "(812) 385-5050", "distance": 25648.760121181265}, {"id": "EqUiLH1OC0eT3yY0Cr1fCw",
+        "alias": "gardos-italian-oven-evansville", "name": "Gardo''s Italian Oven",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/euq70Kvo-g6f_6o6tkD-ug/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/gardos-italian-oven-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 15, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "pizza", "title": "Pizza"}], "rating": 4.5, "coordinates": {"latitude":
+        38.099325, "longitude": -87.580083}, "transactions": ["delivery"], "price":
+        "$", "location": {"address1": "13220 Darmstadt Rd", "address2": null, "address3":
+        null, "city": "Evansville", "zip_code": "47725", "country": "US", "state":
+        "IN", "display_address": ["13220 Darmstadt Rd", "Evansville, IN 47725"]},
+        "phone": "+18128688071", "display_phone": "(812) 868-8071", "distance": 19349.10517917656},
+        {"id": "p2rMEFjEdZFRDM22ROq-9A", "alias": "little-italys-pizza-mount-carmel",
+        "name": "Little Italy''s Pizza", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/qUIwU5qdN4k1NsMloTn8iw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/little-italys-pizza-mount-carmel?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 8, "categories": [{"alias": "pizza", "title": "Pizza"}], "rating":
+        4.5, "coordinates": {"latitude": 38.40984, "longitude": -87.76525}, "transactions":
+        [], "price": "$", "location": {"address1": "502 N Walnut St", "address2":
+        "", "address3": "", "city": "Mount Carmel", "zip_code": "62863", "country":
+        "US", "state": "IL", "display_address": ["502 N Walnut St", "Mount Carmel,
+        IL 62863"]}, "phone": "+16182624121", "display_phone": "(618) 262-4121", "distance":
+        26684.449533784773}, {"id": "wpXE2WhZIEt84BuZTxdSkg", "alias": "ponchos-pizzeria-mount-vernon",
+        "name": "Poncho''s Pizzeria", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/l6CRdR1eZNdPPbJLXeOKxQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/ponchos-pizzeria-mount-vernon?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 3, "categories": [{"alias": "pizza", "title": "Pizza"}], "rating":
+        4.0, "coordinates": {"latitude": 37.933089426942736, "longitude": -87.8960374715145},
+        "transactions": [], "location": {"address1": "425 S Main St", "address2":
+        "", "address3": null, "city": "Mount Vernon", "zip_code": "47620", "country":
+        "US", "state": "IN", "display_address": ["425 S Main St", "Mount Vernon, IN
+        47620"]}, "phone": "+18128313737", "display_phone": "(812) 831-3737", "distance":
+        28188.040794282108}, {"id": "ggoF7sRQ6lRW3C2DXeZkgA", "alias": "lombardis-new-york-pizza-and-wings-evansville-2",
+        "name": "Lombardi''s New York Pizza and Wings", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/eIek6Fjq1O27XLIOPHe30Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/lombardis-new-york-pizza-and-wings-evansville-2?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 45, "categories": [{"alias": "pizza", "title": "Pizza"}],
+        "rating": 4.5, "coordinates": {"latitude": 38.008433, "longitude": -87.490816},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "3311
+        N Green River Rd", "address2": "", "address3": "", "city": "Evansville", "zip_code":
+        "47715", "country": "US", "state": "IN", "display_address": ["3311 N Green
+        River Rd", "Evansville, IN 47715"]}, "phone": "+18126025255", "display_phone":
+        "(812) 602-5255", "distance": 31201.333406972604}, {"id": "Uy1YGlossLD6KWr1KP4PgA",
+        "alias": "turonis-pizzery-and-brewery-evansville-2", "name": "Turoni''s Pizzery
+        & Brewery", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Dq6_SwRXAx_v8TSAtsJxKw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/turonis-pizzery-and-brewery-evansville-2?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 191, "categories": [{"alias": "pizza", "title": "Pizza"},
+        {"alias": "breweries", "title": "Breweries"}], "rating": 4.0, "coordinates":
+        {"latitude": 37.9815535, "longitude": -87.56400720734023}, "transactions":
+        ["delivery"], "price": "$$", "location": {"address1": "408 N Main St", "address2":
+        "", "address3": "", "city": "Evansville", "zip_code": "47711", "country":
+        "US", "state": "IN", "display_address": ["408 N Main St", "Evansville, IN
+        47711"]}, "phone": "+18124249871", "display_phone": "(812) 424-9871", "distance":
+        28364.225207132302}, {"id": "y5pcyzRxLDAVMUB5gOXUjg", "alias": "pangea-pizzeria-evansville",
+        "name": "Pangea Pizzeria", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/hu-9MYL1lxain72dwS8Fkg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/pangea-pizzeria-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 7, "categories": [{"alias": "gelato", "title": "Gelato"},
+        {"alias": "pizza", "title": "Pizza"}], "rating": 5.0, "coordinates": {"latitude":
+        37.97407690880677, "longitude": -87.5755884}, "transactions": [], "location":
+        {"address1": "401 NW 2nd St", "address2": "Ste A", "address3": null, "city":
+        "Evansville", "zip_code": "47715", "country": "US", "state": "IN", "display_address":
+        ["401 NW 2nd St", "Ste A", "Evansville, IN 47715"]}, "phone": "", "display_phone":
+        "", "distance": 28327.510384026886}, {"id": "b0XAhlc0IGBaeD7llN_hBA", "alias":
+        "kelsey-gs-pizza-and-more-henderson", "name": "Kelsey G''s Pizza & More",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/bRNDZdRx1LgwS6eloGPcOw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/kelsey-gs-pizza-and-more-henderson?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 4, "categories": [{"alias": "pizza", "title": "Pizza"}], "rating":
+        4.5, "coordinates": {"latitude": 37.8745346069336, "longitude": -87.5655288696289},
+        "transactions": [], "location": {"address1": "508 Watson Ln", "address2":
+        "", "address3": "", "city": "Henderson", "zip_code": "42420", "country": "US",
+        "state": "KY", "display_address": ["508 Watson Ln", "Henderson, KY 42420"]},
+        "phone": "+12708300039", "display_phone": "(270) 830-0039", "distance": 37949.628549332694},
+        {"id": "Js9s3NPSVZSP07KIyQOzHQ", "alias": "pizza-hut-princeton-5", "name":
+        "Pizza Hut", "image_url": "", "is_closed": false, "url": "https://www.yelp.com/biz/pizza-hut-princeton-5?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 8, "categories": [{"alias": "pizza", "title": "Pizza"}, {"alias":
+        "chicken_wings", "title": "Chicken Wings"}, {"alias": "hotdogs", "title":
+        "Fast Food"}], "rating": 1.5, "coordinates": {"latitude": 38.355755, "longitude":
+        -87.586839}, "transactions": [], "price": "$", "location": {"address1": "1606
+        W Broadway St", "address2": "", "address3": "", "city": "Princeton", "zip_code":
+        "47670", "country": "US", "state": "IN", "display_address": ["1606 W Broadway
+        St", "Princeton, IN 47670"]}, "phone": "+18123858831", "display_phone": "(812)
+        385-8831", "distance": 26767.34363629349}, {"id": "l7F-uyotq0JzEwZoJrvwNw",
+        "alias": "subway-poseyville-2", "name": "Subway", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/_33RURPeh7FvjW-xl6Oubw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/subway-poseyville-2?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 2, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
+        {"alias": "hotdogs", "title": "Fast Food"}], "rating": 2.0, "coordinates":
+        {"latitude": 38.17119879671824, "longitude": -87.7804378}, "transactions":
+        [], "price": "$", "location": {"address1": "Hwy I 65 & I 68", "address2":
+        "", "address3": "", "city": "Poseyville", "zip_code": "47633", "country":
+        "US", "state": "IN", "display_address": ["Hwy I 65 & I 68", "Poseyville, IN
+        47633"]}, "phone": "+18128743344", "display_phone": "(812) 874-3344", "distance":
+        185.7918051126353}, {"id": "4X0OCZBYHd6Qtp0OoMlbAw", "alias": "franklin-street-pizza-factory-evansville-2",
+        "name": "Franklin Street Pizza Factory", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/NHnxzffBAv6c6CE883hVhA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/franklin-street-pizza-factory-evansville-2?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 67, "categories": [{"alias": "pizza", "title": "Pizza"}, {"alias":
+        "beerbar", "title": "Beer Bar"}], "rating": 4.0, "coordinates": {"latitude":
+        37.9806806882859, "longitude": -87.5952011346817}, "transactions": ["delivery"],
+        "price": "$$", "location": {"address1": "2033 W Franklin", "address2": "",
+        "address3": "", "city": "Evansville", "zip_code": "47712", "country": "US",
+        "state": "IN", "display_address": ["2033 W Franklin", "Evansville, IN 47712"]},
+        "phone": "+18126023028", "display_phone": "(812) 602-3028", "distance": 26679.630961417966}],
+        "total": 220, "region": {"center": {"longitude": -87.78213500976562, "latitude":
+        38.1701930926301}}}'
+  recorded_at: Sun, 14 Jan 2024 22:49:21 GMT
+recorded_with: VCR 6.2.0

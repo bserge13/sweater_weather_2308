@@ -4,7 +4,7 @@ RSpec.describe 'Munchie API' do
   describe 'Munchies search request' do 
     it 'returns suggested places to eat based off category and location', :vcr do 
       location = 'Evansville, IN'
-      food = 'italian' 
+      food = 'Italian' 
 
       get "/api/v1/munchies?destination=#{location}&food=#{food}"
       expect(response).to be_successful

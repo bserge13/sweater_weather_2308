@@ -1,4 +1,4 @@
-class MunchiesService 
+class MunchieService 
   def self.find_food(destination, food)
     get_url("/v3/businesses/search?location=#{destination}&term=#{food}")
   end 

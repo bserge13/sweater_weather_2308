@@ -966,4 +966,281 @@ http_interactions:
         "(812) 425-7729", "distance": 1087.395391912403}], "total": 85, "region":
         {"center": {"longitude": -87.54112243652344, "latitude": 37.98258871748486}}}'
   recorded_at: Sun, 14 Jan 2024 22:03:11 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=Evansville,%20IN&term=Italian
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer YUh6t8SRIA4qQIOHWCCG2RgF4mqeR2AJewalPI1iPMVSsjPp32MxIVIMnSYmxsQtCmKikssBrLDQBRL0K5Z90y_neWh0bznyoWRIejZbZfDXxFrvmfY2cYXlrjikZXYx
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Dailylimit:
+      - '500.0'
+      Ratelimit-Remaining:
+      - '492.0'
+      Ratelimit-Resettime:
+      - '2024-01-15T00:00:00+00:00'
+      Server:
+      - envoy
+      X-B3-Sampled:
+      - '0'
+      X-Routing-Service:
+      - routing-main--useast1-74f644dc4b-g4jnn; site=public_api_v3
+      X-Zipkin-Id:
+      - b5ed9f255748d6fb
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-92-52-useast1aprod
+      X-Extlb:
+      - 10-65-92-52-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 14 Jan 2024 22:45:27 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-cmh1290034-CMH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "MY5SW-PT0fiPhwkD2RuLRA", "alias": "biaggis-ristaronte-italiano-evansville-evansville",
+        "name": "Biaggi''s Ristaronte Italiano - Evansville", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/fWgArOyJ5WG_xruQa4K9Ow/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/biaggis-ristaronte-italiano-evansville-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 174, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "tradamerican", "title":
+        "American"}], "rating": 4.0, "coordinates": {"latitude": 37.9743, "longitude":
+        -87.47186}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "6401 E Lloyd Expy", "address2": "Ste 3", "address3": "", "city": "Evansville",
+        "zip_code": "47715", "country": "US", "state": "IN", "display_address": ["6401
+        E Lloyd Expy", "Ste 3", "Evansville, IN 47715"]}, "phone": "+18124210800",
+        "display_phone": "(812) 421-0800", "distance": 5988.741852383966}, {"id":
+        "tC3buSk4JIcQTZsgfZlsYQ", "alias": "little-italy-restaurant-evansville", "name":
+        "Little Italy Restaurant", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/IEczZxRQgX6-juwCXmHMzQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/little-italy-restaurant-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 62, "categories": [{"alias": "pizza", "title": "Pizza"}, {"alias":
+        "italian", "title": "Italian"}, {"alias": "pastashops", "title": "Pasta Shops"}],
+        "rating": 4.5, "coordinates": {"latitude": 38.0184979, "longitude": -87.57541},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "4430
+        N 1st Ave", "address2": "", "address3": "", "city": "Evansville", "zip_code":
+        "47710", "country": "US", "state": "IN", "display_address": ["4430 N 1st Ave",
+        "Evansville, IN 47710"]}, "phone": "+18124010588", "display_phone": "(812)
+        401-0588", "distance": 4996.945466248258}, {"id": "zbbRWEwvO7ZtgQM4bsRNUA",
+        "alias": "angelos-evansville", "name": "Angelo''s", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ckMp_5ohXukkmugR0rqVbA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/angelos-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 71, "categories": [{"alias": "italian", "title": "Italian"}],
+        "rating": 4.0, "coordinates": {"latitude": 37.9709091186523, "longitude":
+        -87.5717163085938}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "305 Main St", "address2": "", "address3": "", "city": "Evansville",
+        "zip_code": "47708", "country": "US", "state": "IN", "display_address": ["305
+        Main St", "Evansville, IN 47708"]}, "phone": "+18124286666", "display_phone":
+        "(812) 428-6666", "distance": 2980.134404659154}, {"id": "DPhCCFYcKmigKYeaEqdiZQ",
+        "alias": "sauced-evansville", "name": "Sauced", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/DDAGY8ByaHB2VRlZmG2-NA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/sauced-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 85, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "desserts", "title": "Desserts"}, {"alias": "salad", "title": "Salad"}],
+        "rating": 4.0, "coordinates": {"latitude": 37.961487, "longitude": -87.566513},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "1113
+        Parrett St", "address2": "", "address3": "", "city": "Evansville", "zip_code":
+        "47713", "country": "US", "state": "IN", "display_address": ["1113 Parrett
+        St", "Evansville, IN 47713"]}, "phone": "+18124022230", "display_phone": "(812)
+        402-2230", "distance": 3242.26594402915}, {"id": "SvHkuLM9ky7RCT2j6jHvPA",
+        "alias": "milanos-italian-cusine-evansville", "name": "Milanos Italian Cusine",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/qTMQ1NkVE_YYRF10Sqd4DQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/milanos-italian-cusine-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 27, "categories": [{"alias": "italian", "title": "Italian"}],
+        "rating": 3.5, "coordinates": {"latitude": 37.9723511, "longitude": -87.5700378},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "500 Main St", "address2": "", "address3": "", "city": "Evansville", "zip_code":
+        "47708", "country": "US", "state": "IN", "display_address": ["500 Main St",
+        "Evansville, IN 47708"]}, "phone": "+18124842222", "display_phone": "(812)
+        484-2222", "distance": 2767.147871193947}, {"id": "mJA3I5CLd0nKSfK9Edq-Mg",
+        "alias": "pangea-kitchen-evansville", "name": "Pangea Kitchen", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/7w7yBHj5Fcv4lPLfqN_hjQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/pangea-kitchen-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 282, "categories": [{"alias": "pizza", "title": "Pizza"},
+        {"alias": "thai", "title": "Thai"}, {"alias": "gelato", "title": "Gelato"}],
+        "rating": 4.5, "coordinates": {"latitude": 37.9757583730869, "longitude":
+        -87.4938848301636}, "transactions": ["pickup", "delivery"], "price": "$$",
+        "location": {"address1": "111 S Green River Rd", "address2": "", "address3":
+        "", "city": "Evansville", "zip_code": "47715", "country": "US", "state": "IN",
+        "display_address": ["111 S Green River Rd", "Evansville, IN 47715"]}, "phone":
+        "+18124012405", "display_phone": "(812) 401-2405", "distance": 4209.347459519495},
+        {"id": "5dLq5xJDeVsnmYV7w23QWA", "alias": "smittys-italian-steakhouse-evansville-2",
+        "name": "Smitty''s Italian Steakhouse", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/mml8_Bf7kr7XOZpDoo61FQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/smittys-italian-steakhouse-evansville-2?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 106, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "steak", "title": "Steakhouses"}], "rating": 3.0, "coordinates":
+        {"latitude": 37.98085, "longitude": -87.59613}, "transactions": ["delivery"],
+        "price": "$$", "location": {"address1": "2109 W Franklin St", "address2":
+        "", "address3": "", "city": "Evansville", "zip_code": "47712", "country":
+        "US", "state": "IN", "display_address": ["2109 W Franklin St", "Evansville,
+        IN 47712"]}, "phone": "+18124236280", "display_phone": "(812) 423-6280", "distance":
+        4828.22873275392}, {"id": "fCIgFg2ruL8GZf-qwKhTtw", "alias": "little-angelos-newburgh",
+        "name": "Little Angelo''s", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/bJkI7kxg8pvRJMQd7GVLsg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/little-angelos-newburgh?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 43, "categories": [{"alias": "italian", "title": "Italian"}],
+        "rating": 3.5, "coordinates": {"latitude": 37.9756799, "longitude": -87.39578},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "8000 Bell Oaks Dr", "address2": "", "address3": "", "city": "Newburgh", "zip_code":
+        "47630", "country": "US", "state": "IN", "display_address": ["8000 Bell Oaks
+        Dr", "Newburgh, IN 47630"]}, "phone": "+18128538364", "display_phone": "(812)
+        853-8364", "distance": 12763.569233496715}, {"id": "c6YACMMzPLgeMJq2hk1aMg",
+        "alias": "cross-eyed-cricket-evansville", "name": "Cross Eyed Cricket", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/bphoto/_rQovtXT44ux6eGmHYIsAg/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/cross-eyed-cricket-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 131, "categories": [{"alias": "comfortfood", "title": "Comfort
+        Food"}, {"alias": "tradamerican", "title": "American"}, {"alias": "desserts",
+        "title": "Desserts"}], "rating": 4.0, "coordinates": {"latitude": 37.9780049,
+        "longitude": -87.5957701}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "2101 W Lloyd Expy", "address2": "", "address3": "", "city":
+        "Evansville", "zip_code": "47712", "country": "US", "state": "IN", "display_address":
+        ["2101 W Lloyd Expy", "Evansville, IN 47712"]}, "phone": "+18124226464", "display_phone":
+        "(812) 422-6464", "distance": 4816.955076367217}, {"id": "QQgm89GTjoi6DypSnN9NXQ",
+        "alias": "gerst-bavarian-haus-evansville", "name": "Gerst Bavarian Haus",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/_ne0iiXINqq4Hf-ubLj9HQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/gerst-bavarian-haus-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 294, "categories": [{"alias": "german", "title": "German"},
+        {"alias": "bars", "title": "Bars"}, {"alias": "tradamerican", "title": "American"}],
+        "rating": 4.0, "coordinates": {"latitude": 37.98019, "longitude": -87.5958},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "2100 W Franklin St", "address2": "", "address3": "", "city": "Evansville",
+        "zip_code": "47712", "country": "US", "state": "IN", "display_address": ["2100
+        W Franklin St", "Evansville, IN 47712"]}, "phone": "+18124241420", "display_phone":
+        "(812) 424-1420", "distance": 4806.326141682405}, {"id": "Uy1YGlossLD6KWr1KP4PgA",
+        "alias": "turonis-pizzery-and-brewery-evansville-2", "name": "Turoni''s Pizzery
+        & Brewery", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Dq6_SwRXAx_v8TSAtsJxKw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/turonis-pizzery-and-brewery-evansville-2?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 191, "categories": [{"alias": "pizza", "title": "Pizza"},
+        {"alias": "breweries", "title": "Breweries"}], "rating": 4.0, "coordinates":
+        {"latitude": 37.9815535, "longitude": -87.56400720734023}, "transactions":
+        ["delivery"], "price": "$$", "location": {"address1": "408 N Main St", "address2":
+        "", "address3": "", "city": "Evansville", "zip_code": "47711", "country":
+        "US", "state": "IN", "display_address": ["408 N Main St", "Evansville, IN
+        47711"]}, "phone": "+18124249871", "display_phone": "(812) 424-9871", "distance":
+        2009.0160254454247}, {"id": "EqUiLH1OC0eT3yY0Cr1fCw", "alias": "gardos-italian-oven-evansville",
+        "name": "Gardo''s Italian Oven", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/euq70Kvo-g6f_6o6tkD-ug/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/gardos-italian-oven-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 15, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "pizza", "title": "Pizza"}], "rating": 4.5, "coordinates": {"latitude":
+        38.099325, "longitude": -87.580083}, "transactions": ["delivery"], "price":
+        "$", "location": {"address1": "13220 Darmstadt Rd", "address2": null, "address3":
+        null, "city": "Evansville", "zip_code": "47725", "country": "US", "state":
+        "IN", "display_address": ["13220 Darmstadt Rd", "Evansville, IN 47725"]},
+        "phone": "+18128688071", "display_phone": "(812) 868-8071", "distance": 13421.391555796426},
+        {"id": "b2P01fPYXioNYwUXMPWNvg", "alias": "comfort-by-the-cross-eyed-cricket-evansville",
+        "name": "COMFORT by the Cross-Eyed Cricket", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/-aWBz9JHprMT_pBth2-Tnw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/comfort-by-the-cross-eyed-cricket-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 259, "categories": [{"alias": "comfortfood", "title": "Comfort
+        Food"}, {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}, {"alias":
+        "cocktailbars", "title": "Cocktail Bars"}], "rating": 3.5, "coordinates":
+        {"latitude": 37.9710402, "longitude": -87.572405}, "transactions": ["delivery"],
+        "price": "$$", "location": {"address1": "230 Main St", "address2": "", "address3":
+        null, "city": "Evansville", "zip_code": "47708", "country": "US", "state":
+        "IN", "display_address": ["230 Main St", "Evansville, IN 47708"]}, "phone":
+        "+18129093742", "display_phone": "(812) 909-3742", "distance": 3027.7347950517474},
+        {"id": "ukDMeA1rfhY-4E-cxXWzLQ", "alias": "waltons-evansville-17", "name":
+        "Walton''s", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Vt1iJkiXjcDfnm-NQsgDCQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/waltons-evansville-17?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 201, "categories": [{"alias": "comfortfood", "title": "Comfort
+        Food"}, {"alias": "pizza", "title": "Pizza"}, {"alias": "cocktailbars", "title":
+        "Cocktail Bars"}], "rating": 3.5, "coordinates": {"latitude": 37.963531, "longitude":
+        -87.565781}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "956 Parrett St", "address2": "", "address3": "", "city": "Evansville", "zip_code":
+        "47713", "country": "US", "state": "IN", "display_address": ["956 Parrett
+        St", "Evansville, IN 47713"]}, "phone": "+18124674255", "display_phone": "(812)
+        467-4255", "distance": 3025.946176052008}, {"id": "ggoF7sRQ6lRW3C2DXeZkgA",
+        "alias": "lombardis-new-york-pizza-and-wings-evansville-2", "name": "Lombardi''s
+        New York Pizza and Wings", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/eIek6Fjq1O27XLIOPHe30Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/lombardis-new-york-pizza-and-wings-evansville-2?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 45, "categories": [{"alias": "pizza", "title": "Pizza"}],
+        "rating": 4.5, "coordinates": {"latitude": 38.008433, "longitude": -87.490816},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "3311
+        N Green River Rd", "address2": "", "address3": "", "city": "Evansville", "zip_code":
+        "47715", "country": "US", "state": "IN", "display_address": ["3311 N Green
+        River Rd", "Evansville, IN 47715"]}, "phone": "+18126025255", "display_phone":
+        "(812) 602-5255", "distance": 5262.238594613337}, {"id": "d2jeoTlP-2O-4bsNAGPdUQ",
+        "alias": "olive-garden-italian-restaurant-evansville-4", "name": "Olive Garden
+        Italian Restaurant", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/qsUn-wbZNThPQaZQCEfviQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/olive-garden-italian-restaurant-evansville-4?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 49, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "salad", "title": "Salad"}, {"alias": "soup", "title": "Soup"}],
+        "rating": 3.0, "coordinates": {"latitude": 37.986326, "longitude": -87.493146},
+        "transactions": [], "price": "$$", "location": {"address1": "1100 N Green
+        River Rd", "address2": "", "address3": "", "city": "Evansville", "zip_code":
+        "47715", "country": "US", "state": "IN", "display_address": ["1100 N Green
+        River Rd", "Evansville, IN 47715"]}, "phone": "+18124732903", "display_phone":
+        "(812) 473-2903", "distance": 4225.201711112086}, {"id": "Hb_ISMv5u47RF-SpCMgOWA",
+        "alias": "bonefish-grill-evansville", "name": "Bonefish Grill", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/7kE5a0SpQT86ILgnYJe-yA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/bonefish-grill-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 152, "categories": [{"alias": "seafood", "title": "Seafood"}],
+        "rating": 4.0, "coordinates": {"latitude": 37.9757886, "longitude": -87.4730235},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "6401 E Lloyd Expy", "address2": "", "address3": "", "city": "Evansville",
+        "zip_code": "47715", "country": "US", "state": "IN", "display_address": ["6401
+        E Lloyd Expy", "Evansville, IN 47715"]}, "phone": "+18124013474", "display_phone":
+        "(812) 401-3474", "distance": 6016.41006689192}, {"id": "oIv-KBMfmjebaweWU4GEJA",
+        "alias": "turonis-forget-me-not-inn-evansville", "name": "Turoni''s Forget-Me-Not
+        Inn", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/J5eQhjLo_4zGJmC9SUXxuA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/turonis-forget-me-not-inn-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 72, "categories": [{"alias": "pizza", "title": "Pizza"}],
+        "rating": 4.0, "coordinates": {"latitude": 37.9773559570312, "longitude":
+        -87.529670715332}, "transactions": ["pickup", "delivery"], "price": "$$",
+        "location": {"address1": "4 N Weinbach Ave", "address2": "", "address3": "",
+        "city": "Evansville", "zip_code": "47708", "country": "US", "state": "IN",
+        "display_address": ["4 N Weinbach Ave", "Evansville, IN 47708"]}, "phone":
+        "+18124777500", "display_phone": "(812) 477-7500", "distance": 1164.3477046706525},
+        {"id": "jVAwU6eKaQngl0fiYfvZXg", "alias": "deerhead-sidewalk-cafe-evansville",
+        "name": "Deerhead Sidewalk Cafe", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/gSybVdwiak1fcoa5RgwMog/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/deerhead-sidewalk-cafe-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 58, "categories": [{"alias": "pizza", "title": "Pizza"}, {"alias":
+        "cafes", "title": "Cafes"}, {"alias": "tradamerican", "title": "American"}],
+        "rating": 4.5, "coordinates": {"latitude": 37.98498, "longitude": -87.56028},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "222 E Columbia St", "address2": "", "address3": "", "city": "Evansville",
+        "zip_code": "47711", "country": "US", "state": "IN", "display_address": ["222
+        E Columbia St", "Evansville, IN 47711"]}, "phone": "+18124252515", "display_phone":
+        "(812) 425-2515", "distance": 1689.228766399851}, {"id": "r_nMngedaQglmmT1a7-ZAA",
+        "alias": "lyles-sportszone-pizza-and-pub-evansville", "name": "Lyle''s Sportszone",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/s2CEAvv-GivblhDc-dBgsw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/lyles-sportszone-pizza-and-pub-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 3, "categories": [{"alias": "pizza", "title": "Pizza"}, {"alias":
+        "tradamerican", "title": "American"}, {"alias": "pubs", "title": "Pubs"}],
+        "rating": 4.5, "coordinates": {"latitude": 37.992019671253, "longitude": -87.5378407537937},
+        "transactions": ["pickup", "delivery"], "location": {"address1": "1404 E Morgan
+        Ave", "address2": "", "address3": null, "city": "Evansville", "zip_code":
+        "47711", "country": "US", "state": "IN", "display_address": ["1404 E Morgan
+        Ave", "Evansville, IN 47711"]}, "phone": "+18124257729", "display_phone":
+        "(812) 425-7729", "distance": 1087.395391912403}], "total": 85, "region":
+        {"center": {"longitude": -87.54112243652344, "latitude": 37.98258871748486}}}'
+  recorded_at: Sun, 14 Jan 2024 22:45:26 GMT
 recorded_with: VCR 6.2.0
