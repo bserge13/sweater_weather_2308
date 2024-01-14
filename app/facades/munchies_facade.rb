@@ -9,9 +9,9 @@ class MunchiesFacade
       summary: weather[:current][:condition][:text],
       temperature: weather[:current][:temp_f]
     }
-    
+
     results = MunchiesService.find_food(destination, food) 
-    munchie_data = results.map do |restaurant|
+    munchie_data = results[:businesses].map do |restaurant|
       { 
         name: restaurant[:name],
         address: restaurant[:location][:display_address],
@@ -20,6 +20,6 @@ class MunchiesFacade
       }
     end
 
-    Munchie.new(forecast, location, munchie_data)
+    Munchie.new(forecast, destination, munchie_data)
   end
 end

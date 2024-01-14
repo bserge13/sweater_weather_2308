@@ -5,10 +5,10 @@ class Munchie
               :forecast,
               :restaurant 
 
-  def initialize(location, forecast, munchie_data) 
+  def initialize(destination, forecast, munchie_data) 
     @id = nil 
     @type = 'munchie'
-    @destination_city = location
+    @destination_city = destination
     @forecast = forecast
     @restaurant = munchie_data
   end
