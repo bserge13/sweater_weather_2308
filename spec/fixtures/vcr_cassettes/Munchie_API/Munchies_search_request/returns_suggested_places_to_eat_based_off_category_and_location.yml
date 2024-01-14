@@ -49,4 +49,526 @@ http_interactions:
       string: !binary |-
         eyJpbmZvIjp7InN0YXR1c2NvZGUiOjQwMCwiY29weXJpZ2h0Ijp7InRleHQiOiLCqSAyMDI0IE1hcFF1ZXN0LCBJbmMuIiwiaW1hZ2VVcmwiOiJodHRwOi8vYXBpLm1xY2RuLmNvbS9yZXMvbXFsb2dvLmdpZiIsImltYWdlQWx0VGV4dCI6IsKpIDIwMjQgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOlsiSWxsZWdhbCBhcmd1bWVudCBmcm9tIHJlcXVlc3Q6IEluc3VmZmljaWVudCBpbmZvIGZvciBsb2NhdGlvbiJdfSwib3B0aW9ucyI6eyJtYXhSZXN1bHRzIjotMSwiaWdub3JlTGF0TG5nSW5wdXQiOmZhbHNlfSwicmVzdWx0cyI6W3sicHJvdmlkZWRMb2NhdGlvbiI6e30sImxvY2F0aW9ucyI6W119XX0=
   recorded_at: Sun, 14 Jan 2024 20:12:37 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?key=MXpGQNEnD9B2S5o0AFDBlpUh2UjbVpUg&location=henderson,%20ky
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 14 Jan 2024 20:47:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '805'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '1000000000'
+      X-Ratelimit-Remaining-2628000:
+      - '999999976'
+      Ratelimit-Limit:
+      - '1000000000'
+      Ratelimit-Remaining:
+      - '999999976'
+      Ratelimit-Reset:
+      - '306752'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 2166f390-b31e-11ee-b47d-ff8c59d5896a
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"325-VEgAys8JghmKvg0dn7cxITZhSP4"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyNCBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDI0IE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJoZW5kZXJzb24sIGt5In0sImxvY2F0aW9ucyI6W3sic3RyZWV0IjoiIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IkhlbmRlcnNvbiIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJIZW5kZXJzb24iLCJhZG1pbkFyZWE0VHlwZSI6IkNvdW50eSIsImFkbWluQXJlYTMiOiJLWSIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJhZG1pbkFyZWExIjoiVVMiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJwb3N0YWxDb2RlIjoiIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiQTVYQVgiLCJnZW9jb2RlUXVhbGl0eSI6IkNJVFkiLCJkcmFnUG9pbnQiOmZhbHNlLCJzaWRlT2ZTdHJlZXQiOiJOIiwibGlua0lkIjoiMCIsInVua25vd25JbnB1dCI6IiIsInR5cGUiOiJzIiwibGF0TG5nIjp7ImxhdCI6MzcuODMwMTEsImxuZyI6LTg3LjU5NjgzfSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjM3LjgzMDExLCJsbmciOi04Ny41OTY4M30sIm1hcFVybCI6IiJ9XX1dfQ==
+  recorded_at: Sun, 14 Jan 2024 20:47:28 GMT
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/current.json?key=db2e7bac77164ad99e115641241301&q=37.83011,-87.59683
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 14 Jan 2024 20:47:28 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-IL1-1070
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=180
+      Via:
+      - 1.1 haproxy-api-1 (Varnish/7.3)
+      X-Weatherapi-Qpm-Left:
+      - '4999968'
+      X-Varnish:
+      - '122675463081'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - 01/14/2024 20:47:28
+      Cdn-Edgestorageid:
+      - '940'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - 16d749495646482959950746d9e37edc
+      Cdn-Cache:
+      - EXPIRED
+    body:
+      encoding: ASCII-8BIT
+      string: '{"location":{"name":"Henderson","region":"Kentucky","country":"United
+        States of America","lat":37.83,"lon":-87.6,"tz_id":"America/Chicago","localtime_epoch":1705265211,"localtime":"2024-01-14
+        14:46"},"current":{"last_updated_epoch":1705265100,"last_updated":"2024-01-14
+        14:45","temp_c":-13.3,"temp_f":8.1,"is_day":1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png","code":1000},"wind_mph":8.1,"wind_kph":13.0,"wind_degree":290,"wind_dir":"WNW","pressure_mb":1028.0,"pressure_in":30.35,"precip_mm":0.0,"precip_in":0.0,"humidity":60,"cloud":0,"feelslike_c":-21.8,"feelslike_f":-7.3,"vis_km":16.0,"vis_miles":9.0,"uv":1.0,"gust_mph":13.6,"gust_kph":22.0}}'
+  recorded_at: Sun, 14 Jan 2024 20:47:28 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/businesses/search?location=henderson,%20ky&term=italian
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer YUh6t8SRIA4qQIOHWCCG2RgF4mqeR2AJewalPI1iPMVSsjPp32MxIVIMnSYmxsQtCmKikssBrLDQBRL0K5Z90y_neWh0bznyoWRIejZbZfDXxFrvmfY2cYXlrjikZXYx
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Connection:
+      - keep-alive
+      Server:
+      - openresty/1.21.4.1
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Security-Policy:
+      - script-src 'none';
+      X-Zipkin-Id:
+      - 21883a5616cb3224
+      X-Routing-Service:
+      - routing-main--useast1-74f644dc4b-nb9l7; site=mobile_api_v1
+      X-B3-Sampled:
+      - '0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-130-183-useast1bprod
+      X-Extlb:
+      - 10-65-130-183-useast1bprod
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 14 Jan 2024 20:55:11 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-cmh1290088-CMH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |-
+        <html>
+          <head><title>Bad Request</title></head>
+          <body>
+            <h1>400 Bad Request</h1>
+            <p>Error served by routing service running on <tt>routing-main--useast1-74f644dc4b-nb9l7</tt></p>
+          </body>
+        </html>
+  recorded_at: Sun, 14 Jan 2024 20:55:11 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/businesses/search?Authorization=Bearer%20YUh6t8SRIA4qQIOHWCCG2RgF4mqeR2AJewalPI1iPMVSsjPp32MxIVIMnSYmxsQtCmKikssBrLDQBRL0K5Z90y_neWh0bznyoWRIejZbZfDXxFrvmfY2cYXlrjikZXYx&location=henderson,%20ky&term=italian
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Connection:
+      - keep-alive
+      Server:
+      - openresty/1.21.4.1
+      Content-Type:
+      - text/html; charset=utf-8
+      X-B3-Sampled:
+      - '0'
+      Content-Security-Policy:
+      - script-src 'none';
+      X-Routing-Service:
+      - routing-main--useast1-74f644dc4b-d5pwf; site=mobile_api_v1
+      X-Zipkin-Id:
+      - ca40902d80e67480
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-172-176-useast1bprod
+      X-Extlb:
+      - 10-65-172-176-useast1bprod
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 14 Jan 2024 20:56:03 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-cmh1290099-CMH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |-
+        <html>
+          <head><title>Bad Request</title></head>
+          <body>
+            <h1>400 Bad Request</h1>
+            <p>Error served by routing service running on <tt>routing-main--useast1-74f644dc4b-d5pwf</tt></p>
+          </body>
+        </html>
+  recorded_at: Sun, 14 Jan 2024 20:56:03 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=henderson,%20ky&term=italian
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer YUh6t8SRIA4qQIOHWCCG2RgF4mqeR2AJewalPI1iPMVSsjPp32MxIVIMnSYmxsQtCmKikssBrLDQBRL0K5Z90y_neWh0bznyoWRIejZbZfDXxFrvmfY2cYXlrjikZXYx
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Dailylimit:
+      - '500.0'
+      X-Routing-Service:
+      - routing-main--useast1-74f644dc4b-vqsp4; site=public_api_v3
+      Ratelimit-Remaining:
+      - '494.0'
+      Ratelimit-Resettime:
+      - '2024-01-15T00:00:00+00:00'
+      Server:
+      - envoy
+      X-Zipkin-Id:
+      - 11e59c2dfbf16dd6
+      X-B3-Sampled:
+      - '0'
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-65-166-92-useast1bprod
+      X-Extlb:
+      - 10-65-166-92-useast1bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 14 Jan 2024 21:23:59 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-cmh1290055-CMH
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Alt-Svc:
+      - h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "MY5SW-PT0fiPhwkD2RuLRA", "alias": "biaggis-ristaronte-italiano-evansville-evansville",
+        "name": "Biaggi''s Ristaronte Italiano - Evansville", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/fWgArOyJ5WG_xruQa4K9Ow/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/biaggis-ristaronte-italiano-evansville-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 174, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "tradamerican", "title":
+        "American"}], "rating": 4.0, "coordinates": {"latitude": 37.9743, "longitude":
+        -87.47186}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "6401 E Lloyd Expy", "address2": "Ste 3", "address3": "", "city": "Evansville",
+        "zip_code": "47715", "country": "US", "state": "IN", "display_address": ["6401
+        E Lloyd Expy", "Ste 3", "Evansville, IN 47715"]}, "phone": "+18124210800",
+        "display_phone": "(812) 421-0800", "distance": 17827.500228958437}, {"id":
+        "5dLq5xJDeVsnmYV7w23QWA", "alias": "smittys-italian-steakhouse-evansville-2",
+        "name": "Smitty''s Italian Steakhouse", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/mml8_Bf7kr7XOZpDoo61FQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/smittys-italian-steakhouse-evansville-2?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 106, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "steak", "title": "Steakhouses"}], "rating": 3.0, "coordinates":
+        {"latitude": 37.98085, "longitude": -87.59613}, "transactions": ["delivery"],
+        "price": "$$", "location": {"address1": "2109 W Franklin St", "address2":
+        "", "address3": "", "city": "Evansville", "zip_code": "47712", "country":
+        "US", "state": "IN", "display_address": ["2109 W Franklin St", "Evansville,
+        IN 47712"]}, "phone": "+18124236280", "display_phone": "(812) 423-6280", "distance":
+        15492.808328950041}, {"id": "DPhCCFYcKmigKYeaEqdiZQ", "alias": "sauced-evansville",
+        "name": "Sauced", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/DDAGY8ByaHB2VRlZmG2-NA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/sauced-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 85, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "desserts", "title": "Desserts"}, {"alias": "salad", "title": "Salad"}],
+        "rating": 4.0, "coordinates": {"latitude": 37.961487, "longitude": -87.566513},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "1113
+        Parrett St", "address2": "", "address3": "", "city": "Evansville", "zip_code":
+        "47713", "country": "US", "state": "IN", "display_address": ["1113 Parrett
+        St", "Evansville, IN 47713"]}, "phone": "+18124022230", "display_phone": "(812)
+        402-2230", "distance": 13422.105939006673}, {"id": "fCIgFg2ruL8GZf-qwKhTtw",
+        "alias": "little-angelos-newburgh", "name": "Little Angelo''s", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/bphoto/bJkI7kxg8pvRJMQd7GVLsg/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/little-angelos-newburgh?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 43, "categories": [{"alias": "italian", "title": "Italian"}],
+        "rating": 3.5, "coordinates": {"latitude": 37.9756799, "longitude": -87.39578},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "8000 Bell Oaks Dr", "address2": "", "address3": "", "city": "Newburgh", "zip_code":
+        "47630", "country": "US", "state": "IN", "display_address": ["8000 Bell Oaks
+        Dr", "Newburgh, IN 47630"]}, "phone": "+18128538364", "display_phone": "(812)
+        853-8364", "distance": 22397.958945118342}, {"id": "Qu8aMihQgca04F_AVVJ23Q",
+        "alias": "tavola-dei-nonna-henderson", "name": "Tavola Dei Nonna", "image_url":
+        "", "is_closed": false, "url": "https://www.yelp.com/biz/tavola-dei-nonna-henderson?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 2, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "desserts", "title": "Desserts"}, {"alias": "chickenshop", "title":
+        "Chicken Shop"}], "rating": 1.0, "coordinates": {"latitude": 37.838175575910284,
+        "longitude": -87.58968192127811}, "transactions": [], "location": {"address1":
+        "31 N Green St", "address2": "", "address3": null, "city": "Henderson", "zip_code":
+        "42420", "country": "US", "state": "KY", "display_address": ["31 N Green St",
+        "Henderson, KY 42420"]}, "phone": "+12702120024", "display_phone": "(270)
+        212-0024", "distance": 487.8248711156002}, {"id": "zbbRWEwvO7ZtgQM4bsRNUA",
+        "alias": "angelos-evansville", "name": "Angelo''s", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ckMp_5ohXukkmugR0rqVbA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/angelos-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 71, "categories": [{"alias": "italian", "title": "Italian"}],
+        "rating": 4.0, "coordinates": {"latitude": 37.9709091186523, "longitude":
+        -87.5717163085938}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "305 Main St", "address2": "", "address3": "", "city": "Evansville",
+        "zip_code": "47708", "country": "US", "state": "IN", "display_address": ["305
+        Main St", "Evansville, IN 47708"]}, "phone": "+18124286666", "display_phone":
+        "(812) 428-6666", "distance": 14423.065632733638}, {"id": "SvHkuLM9ky7RCT2j6jHvPA",
+        "alias": "milanos-italian-cusine-evansville", "name": "Milanos Italian Cusine",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/qTMQ1NkVE_YYRF10Sqd4DQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/milanos-italian-cusine-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 27, "categories": [{"alias": "italian", "title": "Italian"}],
+        "rating": 3.5, "coordinates": {"latitude": 37.9723511, "longitude": -87.5700378},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "500 Main St", "address2": "", "address3": "", "city": "Evansville", "zip_code":
+        "47708", "country": "US", "state": "IN", "display_address": ["500 Main St",
+        "Evansville, IN 47708"]}, "phone": "+18124842222", "display_phone": "(812)
+        484-2222", "distance": 14596.613027191981}, {"id": "g1UPQSMM3rqmZH-v3X1q8w",
+        "alias": "mister-bs-pizza-and-wings-henderson", "name": "Mister B''s Pizza
+        & Wings", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/lYHreoBkrEeL3yCUa8e8Lg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/mister-bs-pizza-and-wings-henderson?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 19, "categories": [{"alias": "pizza", "title": "Pizza"}],
+        "rating": 3.5, "coordinates": {"latitude": 37.8748304749594, "longitude":
+        -87.5687446575281}, "transactions": [], "price": "$", "location": {"address1":
+        "316 N Green St", "address2": "", "address3": "", "city": "Henderson", "zip_code":
+        "42420", "country": "US", "state": "KY", "display_address": ["316 N Green
+        St", "Henderson, KY 42420"]}, "phone": "+12708269999", "display_phone": "(270)
+        826-9999", "distance": 3994.1609312000073}, {"id": "8z4s6gmy585xwzZNCT1BBw",
+        "alias": "fazolis-henderson-2", "name": "Fazoli''s", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/HzsnNLqWCpR_CkMUW2W-aA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/fazolis-henderson-2?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 1, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "hotdogs", "title": "Fast Food"}, {"alias": "pizza", "title": "Pizza"}],
+        "rating": 2.0, "coordinates": {"latitude": 37.827543, "longitude": -87.55751},
+        "transactions": [], "location": {"address1": "192 Garden Mile Road", "address2":
+        null, "address3": null, "city": "Henderson", "zip_code": "42420", "country":
+        "US", "state": "KY", "display_address": ["192 Garden Mile Road", "Henderson,
+        KY 42420"]}, "phone": "+12702284444", "display_phone": "(270) 228-4444", "distance":
+        2994.6941137115864}, {"id": "ukDMeA1rfhY-4E-cxXWzLQ", "alias": "waltons-evansville-17",
+        "name": "Walton''s", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Vt1iJkiXjcDfnm-NQsgDCQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/waltons-evansville-17?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 201, "categories": [{"alias": "comfortfood", "title": "Comfort
+        Food"}, {"alias": "pizza", "title": "Pizza"}, {"alias": "cocktailbars", "title":
+        "Cocktail Bars"}], "rating": 3.5, "coordinates": {"latitude": 37.963531, "longitude":
+        -87.565781}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "956 Parrett St", "address2": "", "address3": "", "city": "Evansville", "zip_code":
+        "47713", "country": "US", "state": "IN", "display_address": ["956 Parrett
+        St", "Evansville, IN 47713"]}, "phone": "+18124674255", "display_phone": "(812)
+        467-4255", "distance": 13661.161603525275}, {"id": "b2P01fPYXioNYwUXMPWNvg",
+        "alias": "comfort-by-the-cross-eyed-cricket-evansville", "name": "COMFORT
+        by the Cross-Eyed Cricket", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/-aWBz9JHprMT_pBth2-Tnw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/comfort-by-the-cross-eyed-cricket-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 259, "categories": [{"alias": "comfortfood", "title": "Comfort
+        Food"}, {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}, {"alias":
+        "cocktailbars", "title": "Cocktail Bars"}], "rating": 3.5, "coordinates":
+        {"latitude": 37.9710402, "longitude": -87.572405}, "transactions": ["delivery"],
+        "price": "$$", "location": {"address1": "230 Main St", "address2": "", "address3":
+        null, "city": "Evansville", "zip_code": "47708", "country": "US", "state":
+        "IN", "display_address": ["230 Main St", "Evansville, IN 47708"]}, "phone":
+        "+18129093742", "display_phone": "(812) 909-3742", "distance": 14430.289187230419},
+        {"id": "mJA3I5CLd0nKSfK9Edq-Mg", "alias": "pangea-kitchen-evansville", "name":
+        "Pangea Kitchen", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/7w7yBHj5Fcv4lPLfqN_hjQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/pangea-kitchen-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 282, "categories": [{"alias": "pizza", "title": "Pizza"},
+        {"alias": "thai", "title": "Thai"}, {"alias": "gelato", "title": "Gelato"}],
+        "rating": 4.5, "coordinates": {"latitude": 37.9757583730869, "longitude":
+        -87.4938848301636}, "transactions": ["pickup", "delivery"], "price": "$$",
+        "location": {"address1": "111 S Green River Rd", "address2": "", "address3":
+        "", "city": "Evansville", "zip_code": "47715", "country": "US", "state": "IN",
+        "display_address": ["111 S Green River Rd", "Evansville, IN 47715"]}, "phone":
+        "+18124012405", "display_phone": "(812) 401-2405", "distance": 16970.97947649705},
+        {"id": "c6YACMMzPLgeMJq2hk1aMg", "alias": "cross-eyed-cricket-evansville",
+        "name": "Cross Eyed Cricket", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/_rQovtXT44ux6eGmHYIsAg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/cross-eyed-cricket-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 131, "categories": [{"alias": "comfortfood", "title": "Comfort
+        Food"}, {"alias": "tradamerican", "title": "American"}, {"alias": "desserts",
+        "title": "Desserts"}], "rating": 4.0, "coordinates": {"latitude": 37.9780049,
+        "longitude": -87.5957701}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "2101 W Lloyd Expy", "address2": "", "address3": "", "city":
+        "Evansville", "zip_code": "47712", "country": "US", "state": "IN", "display_address":
+        ["2101 W Lloyd Expy", "Evansville, IN 47712"]}, "phone": "+18124226464", "display_phone":
+        "(812) 422-6464", "distance": 15172.73726962812}, {"id": "40e5N7KRbnLPte9fauyhiQ",
+        "alias": "caseys-henderson-2", "name": "Casey''s", "image_url": "", "is_closed":
+        false, "url": "https://www.yelp.com/biz/caseys-henderson-2?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 1, "categories": [{"alias": "pizza", "title": "Pizza"}], "rating":
+        5.0, "coordinates": {"latitude": 37.84689100310085, "longitude": -87.58453665699324},
+        "transactions": [], "location": {"address1": "721 N Green St", "address2":
+        null, "address3": null, "city": "Henderson", "zip_code": "42420", "country":
+        "US", "state": "KY", "display_address": ["721 N Green St", "Henderson, KY
+        42420"]}, "phone": "+12705698564", "display_phone": "(270) 569-8564", "distance":
+        596.8092621371344}, {"id": "Hb_ISMv5u47RF-SpCMgOWA", "alias": "bonefish-grill-evansville",
+        "name": "Bonefish Grill", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/7kE5a0SpQT86ILgnYJe-yA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/bonefish-grill-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 152, "categories": [{"alias": "seafood", "title": "Seafood"}],
+        "rating": 4.0, "coordinates": {"latitude": 37.9757886, "longitude": -87.4730235},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "6401 E Lloyd Expy", "address2": "", "address3": "", "city": "Evansville",
+        "zip_code": "47715", "country": "US", "state": "IN", "display_address": ["6401
+        E Lloyd Expy", "Evansville, IN 47715"]}, "phone": "+18124013474", "display_phone":
+        "(812) 401-3474", "distance": 17921.681706020823}, {"id": "u3gwtdQYeguEHtwPWsjB5Q",
+        "alias": "azzip-pizza-newburgh-2", "name": "Azzip Pizza", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/9sDXhCiwu9gvSyqeUr7y6Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/azzip-pizza-newburgh-2?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 24, "categories": [{"alias": "pizza", "title": "Pizza"}],
+        "rating": 4.5, "coordinates": {"latitude": 37.97876221388535, "longitude":
+        -87.41142695685069}, "transactions": ["delivery"], "price": "$", "location":
+        {"address1": "8850 High Pointe Dr", "address2": "", "address3": "", "city":
+        "Newburgh", "zip_code": "47630", "country": "US", "state": "IN", "display_address":
+        ["8850 High Pointe Dr", "Newburgh, IN 47630"]}, "phone": "+18125183810", "display_phone":
+        "(812) 518-3810", "distance": 21630.725943809204}, {"id": "QQgm89GTjoi6DypSnN9NXQ",
+        "alias": "gerst-bavarian-haus-evansville", "name": "Gerst Bavarian Haus",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/_ne0iiXINqq4Hf-ubLj9HQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/gerst-bavarian-haus-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 294, "categories": [{"alias": "german", "title": "German"},
+        {"alias": "bars", "title": "Bars"}, {"alias": "tradamerican", "title": "American"}],
+        "rating": 4.0, "coordinates": {"latitude": 37.98019, "longitude": -87.5958},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "2100 W Franklin St", "address2": "", "address3": "", "city": "Evansville",
+        "zip_code": "47712", "country": "US", "state": "IN", "display_address": ["2100
+        W Franklin St", "Evansville, IN 47712"]}, "phone": "+18124241420", "display_phone":
+        "(812) 424-1420", "distance": 15419.602320458742}, {"id": "sst9B82bMsp1eKD60kHZ_Q",
+        "alias": "papa-johns-pizza-henderson", "name": "Papa Johns Pizza", "image_url":
+        "https://s3-media3.fl.yelpcdn.com/bphoto/HJILfDdp0mg4B9VnpT0HRA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/papa-johns-pizza-henderson?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 3, "categories": [{"alias": "pizza", "title": "Pizza"}, {"alias":
+        "chicken_wings", "title": "Chicken Wings"}, {"alias": "hotdogs", "title":
+        "Fast Food"}], "rating": 3.5, "coordinates": {"latitude": 37.836551017070306,
+        "longitude": -87.58935697387888}, "transactions": ["pickup"], "price": "$",
+        "location": {"address1": "418 Center St", "address2": "", "address3": "",
+        "city": "Henderson", "zip_code": "42420", "country": "US", "state": "KY",
+        "display_address": ["418 Center St", "Henderson, KY 42420"]}, "phone": "+12708264444",
+        "display_phone": "(270) 826-4444", "distance": 631.127869575125}, {"id": "Jr7CTjy3lQCMpQCEuoK2EQ",
+        "alias": "ricks-sports-bar-and-family-room-evansville", "name": "Rick''s Sports
+        Bar and Family Room", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/K7GiG6Bj62RLl6HlkomZeg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/ricks-sports-bar-and-family-room-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 2, "categories": [{"alias": "bars", "title": "Bars"}], "rating":
+        3.0, "coordinates": {"latitude": 37.955771, "longitude": -87.4936085}, "transactions":
+        ["pickup", "delivery"], "price": "$", "location": {"address1": "1531 S Green
+        River Rd", "address2": null, "address3": null, "city": "Evansville", "zip_code":
+        "47715", "country": "US", "state": "IN", "display_address": ["1531 S Green
+        River Rd", "Evansville, IN 47715"]}, "phone": "+18124774088", "display_phone":
+        "(812) 477-4088", "distance": 15070.684552739158}, {"id": "r_nMngedaQglmmT1a7-ZAA",
+        "alias": "lyles-sportszone-pizza-and-pub-evansville", "name": "Lyle''s Sportszone",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/s2CEAvv-GivblhDc-dBgsw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/lyles-sportszone-pizza-and-pub-evansville?adjust_creative=Ko_RyE3dr9uWqASqqv96Tw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ko_RyE3dr9uWqASqqv96Tw",
+        "review_count": 3, "categories": [{"alias": "pizza", "title": "Pizza"}, {"alias":
+        "tradamerican", "title": "American"}, {"alias": "pubs", "title": "Pubs"}],
+        "rating": 4.5, "coordinates": {"latitude": 37.992019671253, "longitude": -87.5378407537937},
+        "transactions": ["pickup", "delivery"], "location": {"address1": "1404 E Morgan
+        Ave", "address2": "", "address3": null, "city": "Evansville", "zip_code":
+        "47711", "country": "US", "state": "IN", "display_address": ["1404 E Morgan
+        Ave", "Evansville, IN 47711"]}, "phone": "+18124257729", "display_phone":
+        "(812) 425-7729", "distance": 17245.729026132332}], "total": 70, "region":
+        {"center": {"longitude": -87.58644104003906, "latitude": 37.84173875184943}}}'
+  recorded_at: Sun, 14 Jan 2024 21:23:59 GMT
 recorded_with: VCR 6.2.0
