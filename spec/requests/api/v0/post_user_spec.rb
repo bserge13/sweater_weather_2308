@@ -33,4 +33,85 @@ RSpec.describe 'Users POST request' do
       expect(user[:data][:attributes][:api_key]).to be_a String 
     end
   end
+
+  describe 'sad path' do
+    it 'cannot create a user with an email already in use' do 
+      User.create!(
+        email: 'winchester1@gmail.com', 
+        password: 'abc123',
+        password_confirmation: 'abc123',
+        api_key: 'abcdefg'
+      )
+
+      justin = {
+        email: 'winchester1@gmail.com',
+        password: 'Password',
+        password_confirmation: 'Password'
+      }
+
+      header = {
+        'CONTENT_TYPE' => 'application/json',
+        'ACCEPT' => 'application/json'
+      }
+
+      post '/api/v0/users', headers: header, params: justin, as: :json
+
+      expect(response).to_not be_successful 
+      expect(response.status).to eq 400
+
+      error = JSON.parse(response.body, symbolize_names: true)
+
+      expect(error).to be_a Hash
+      expect(error).to have_key :errors
+      expect(error[:errors]).to eq 'Email has already been taken'
+    end
+
+    it 'connot create a user without password & confirmation matching' do 
+      justin = {
+        email: 'winchester1@gmail.com',
+        password: 'Password',
+        password_confirmation: 'Password!'
+      }
+
+      header = {
+        'CONTENT_TYPE' => 'application/json',
+        'ACCEPT' => 'application/json'
+      }
+
+      post '/api/v0/users', headers: header, params: justin, as: :json
+
+      expect(response).to_not be_successful 
+      expect(response.status).to eq 400
+
+      error = JSON.parse(response.body, symbolize_names: true)
+
+      expect(error).to be_a Hash
+      expect(error).to have_key :errors
+      expect(error[:errors]).to eq "Password confirmation doesn't match Password"
+    end
+
+    it 'cannot create a user without an email' do 
+      justin = {
+        email: '',
+        password: 'Password',
+        password_confirmation: 'Password'
+      }
+
+      header = {
+        'CONTENT_TYPE' => 'application/json',
+        'ACCEPT' => 'application/json'
+      }
+
+      post '/api/v0/users', headers: header, params: justin, as: :json
+
+      expect(response).to_not be_successful 
+      expect(response.status).to eq 400
+
+      error = JSON.parse(response.body, symbolize_names: true)
+
+      expect(error).to be_a Hash
+      expect(error).to have_key :errors
+      expect(error[:errors]).to eq "Email can't be blank"
+    end
+  end
 end
