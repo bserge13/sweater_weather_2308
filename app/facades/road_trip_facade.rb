@@ -1,0 +1,3 @@
+class RoadTripFacade
+  
+end
