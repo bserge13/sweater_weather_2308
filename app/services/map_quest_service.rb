@@ -3,6 +3,10 @@ class MapQuestService
     get_url("/geocoding/v1/address?location=#{location}")
   end
 
+  def self.trip_directions(origin, destination)
+    get_url("/directions/v2/route?from=#{origin}&to=#{destination}")
+  end
+
   private 
 
   def self.get_url(url)
