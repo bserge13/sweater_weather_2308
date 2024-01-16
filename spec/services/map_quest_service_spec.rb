@@ -38,5 +38,17 @@ RSpec.describe MapQuestService do
       expect(route[:locations][1][:latLng]).to have_key :lng
       expect(route[:locations][1][:latLng][:lng]).to be_a Float 
     end
+
+    it 'returns and error for impossible routes of travel', :vcr do 
+      error = MapQuestService.trip_directions('los angeles, ca', 'santa rita, guam')
+
+      expect(error).to be_a Hash 
+      expect(error).to have_key :route 
+      expect(error[:route]).to be_a Hash 
+      expect(error[:route]).to have_key :routeError 
+      expect(error).to have_key :info 
+      expect(error[:info]).to have_key :statuscode 
+      expect(error[:info][:statuscode]).to eq 402
+    end
   end
 end
