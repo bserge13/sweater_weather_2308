@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.mapquestapi.com/directions/v2/route?from=new%20york,%20ny&key=MXpGQNEnD9B2S5o0AFDBlpUh2UjbVpUg&to=los%20angeles,%20ca
+    uri: https://www.mapquestapi.com/directions/v2/route?from=new%20york,%20ny&key=MXpGQNEnD9B2S5o0AFDBlpUh2UjbVpUg&to=london,%20uk
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 16 Jan 2024 19:33:29 GMT
+      - Tue, 16 Jan 2024 19:41:41 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -29,17 +29,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '1000000000'
       X-Ratelimit-Remaining-2628000:
-      - '999999930'
+      - '999999928'
       Ratelimit-Limit:
       - '1000000000'
       Ratelimit-Remaining:
-      - '999999930'
+      - '999999928'
       Ratelimit-Reset:
-      - '138391'
+      - '137899'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - 205f4770-b4a6-11ee-90c0-cf3d4286cd62
+      - 458ed230-b4a7-11ee-8f74-279efe20eaba
       Access-Control-Allow-Origin:
       - "*"
       X-Transaction-Count:
@@ -50,5 +50,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MiwibWVzc2FnZSI6IiJ9fSwiaW5mbyI6eyJzdGF0dXNjb2RlIjo0MDIsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyNCBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDI0IE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbIldlIGFyZSB1bmFibGUgdG8gcm91dGUgd2l0aCB0aGUgZ2l2ZW4gbG9jYXRpb25zLiJdfX0=
-  recorded_at: Tue, 16 Jan 2024 19:33:29 GMT
+  recorded_at: Tue, 16 Jan 2024 19:41:41 GMT
 recorded_with: VCR 6.2.0
