@@ -43,7 +43,7 @@ RSpec.describe 'Users POST request' do
         api_key: 'abcdefg'
       )
 
-      justin = {
+      payload = {
         email: 'winchester1@gmail.com',
         password: 'Password',
         password_confirmation: 'Password'
@@ -54,7 +54,7 @@ RSpec.describe 'Users POST request' do
         'ACCEPT' => 'application/json'
       }
 
-      post '/api/v0/users', headers: header, params: justin, as: :json
+      post '/api/v0/users', headers: header, params: payload, as: :json
 
       expect(response).to_not be_successful 
       expect(response.status).to eq 400
@@ -67,7 +67,7 @@ RSpec.describe 'Users POST request' do
     end
 
     it 'connot create a user without password & confirmation matching' do 
-      justin = {
+      payload = {
         email: 'winchester1@gmail.com',
         password: 'Password',
         password_confirmation: 'Password!'
@@ -78,7 +78,7 @@ RSpec.describe 'Users POST request' do
         'ACCEPT' => 'application/json'
       }
 
-      post '/api/v0/users', headers: header, params: justin, as: :json
+      post '/api/v0/users', headers: header, params: payload, as: :json
 
       expect(response).to_not be_successful 
       expect(response.status).to eq 400
@@ -91,7 +91,7 @@ RSpec.describe 'Users POST request' do
     end
 
     it 'cannot create a user without an email' do 
-      justin = {
+      payload = {
         email: '',
         password: 'Password',
         password_confirmation: 'Password'
@@ -102,7 +102,7 @@ RSpec.describe 'Users POST request' do
         'ACCEPT' => 'application/json'
       }
 
-      post '/api/v0/users', headers: header, params: justin, as: :json
+      post '/api/v0/users', headers: header, params: payload, as: :json
 
       expect(response).to_not be_successful 
       expect(response.status).to eq 400
