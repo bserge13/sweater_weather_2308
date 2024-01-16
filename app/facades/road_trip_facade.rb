@@ -1,18 +1,18 @@
 class RoadTripFacade
-  def slef.get_road_trip(origin, destination)
+  def self.get_road_trip(origin, destination)
     directions = MapQuestService.trip_directions(origin, destination)
     if directions[:route].has_key?(:routeError)
       RoadTrip.new(origin, destination, 'impossible route', {})
     else 
-      dest_lat = directions[:route][:locations][1][:latLng][:lat]  
-      dest_lng = directions[:route][:locations][1][:latLng][:lng] 
+      destination_lat = directions[:route][:locations][1][:latLng][:lat]  
+      destination_lng = directions[:route][:locations][1][:latLng][:lng] 
 
       travel_time = directions[:route][:realTime]
       arrival_time = Time.now + travel_time
       formatted_arrival = arrival_time.strftime('%Y-%m-%d %H:%M')
       formatted_travel = directions[:route][:formattedTime]
 
-      forecast = WeatherService.daily_forecast(dest_lat, dest_lng)
+      forecast = WeatherService.daily_forecast(destination_lat, destination_lng)
       forecast[:forecast][:forecastday].map do |day|
         next unless arrival_time.to_s.include?(day[:date])
         @arrival_forecast = {
