@@ -54,4 +54,57 @@ RSpec.describe 'Post request- road trip' do
       expect(weather[:condition]).to be_a String 
     end
   end
+
+  describe 'sad path' do
+    it 'generates an error for a wrong API key use', :vcr do 
+      payload = {
+        origin: 'evansville, in',
+        destination: 'nashville, tn',
+        api_key: 'abcIFORGOTTHEREST'
+      }
+
+      header = {
+        'CONTENT_TYPE' => 'application/json',
+        'ACCEPT' => 'application/json'
+      }
+
+      post '/api/v0/road_trip', headers: header, params: payload, as: :json
+
+      expect(response).to_not be_successful 
+      expect(response.status).to eq 401
+
+      errors = JSON.parse(response.body, symbolize_names: true)
+
+      expect(errors).to be_a Hash
+      expect(errors).to have_key :error
+      expect(errors[:error]).to be_a String
+      expect(errors[:error]).to eq 'Invalid API Key'
+    end 
+
+    it 'generates an error for no API key use', :vcr do 
+      payload = {
+        origin: 'evansville, in',
+        destination: 'nashville, tn',
+        api_key: nil
+      }
+
+      header = {
+        'CONTENT_TYPE' => 'application/json',
+        'ACCEPT' => 'application/json'
+      }
+
+      post '/api/v0/road_trip', headers: header, params: payload, as: :json
+
+      expect(response).to_not be_successful 
+      expect(response.status).to eq 401
+
+      errors = JSON.parse(response.body, symbolize_names: true)
+
+      expect(errors).to be_a Hash
+      expect(errors).to have_key :error
+      expect(errors[:error]).to be_a String
+      expect(errors[:error]).to eq 'Invalid API Key'
+
+    end 
+  end 
 end
