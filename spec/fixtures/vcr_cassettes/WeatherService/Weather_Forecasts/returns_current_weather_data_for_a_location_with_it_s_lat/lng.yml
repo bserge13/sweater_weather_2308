@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/current.json?key=db2e7bac77164ad99e115641241301&q=38.10984,-87.78929
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 16 Jan 2024 20:35:04 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-IL1-1068
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=180
+      Via:
+      - 1.1 haproxy-api-1 (Varnish/7.3)
+      X-Weatherapi-Qpm-Left:
+      - '4999950'
+      X-Varnish:
+      - '125288809871'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - 01/16/2024 20:34:50
+      Cdn-Edgestorageid:
+      - '1029'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - 5f01c72c1f87af52c431c21326ac9144
+      Cdn-Cache:
+      - HIT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"location":{"name":"Wadesville","region":"Indiana","country":"United
+        States of America","lat":38.11,"lon":-87.79,"tz_id":"America/Chicago","localtime_epoch":1705437251,"localtime":"2024-01-16
+        14:34"},"current":{"last_updated_epoch":1705437000,"last_updated":"2024-01-16
+        14:30","temp_c":-8.9,"temp_f":16.0,"is_day":1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png","code":1000},"wind_mph":13.6,"wind_kph":22.0,"wind_degree":250,"wind_dir":"WSW","pressure_mb":1024.0,"pressure_in":30.25,"precip_mm":0.0,"precip_in":0.0,"humidity":48,"cloud":0,"feelslike_c":-16.2,"feelslike_f":2.9,"vis_km":16.0,"vis_miles":9.0,"uv":2.0,"gust_mph":18.1,"gust_kph":29.2}}'
+  recorded_at: Tue, 16 Jan 2024 20:35:04 GMT
+recorded_with: VCR 6.2.0

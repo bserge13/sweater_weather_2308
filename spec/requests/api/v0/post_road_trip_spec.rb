@@ -56,7 +56,7 @@ RSpec.describe 'Post request- road trip' do
 
     it 'creates a response for impossible routes', :vcr do 
       payload = {
-        origin: 'new york, ny',
+        origin: 'new york city, ny',
         destination: 'london, uk',
         api_key: @db_user.api_key
       }
@@ -101,7 +101,7 @@ RSpec.describe 'Post request- road trip' do
   describe 'sad path' do
     it 'generates an error for a wrong API key use', :vcr do 
       payload = {
-        origin: 'new york, ny',
+        origin: 'new york city, ny',
         destination: 'los angeles, ca',
         api_key: 'abcIFORGOTTHEREST'
       }
@@ -126,7 +126,7 @@ RSpec.describe 'Post request- road trip' do
 
     it 'generates an error for no API key use', :vcr do 
       payload = {
-        origin: 'new york, ny',
+        origin: 'new york city, ny',
         destination: 'los angeles, ca',
         api_key: nil
       }
@@ -147,7 +147,6 @@ RSpec.describe 'Post request- road trip' do
       expect(errors).to have_key :error
       expect(errors[:error]).to be_a String
       expect(errors[:error]).to eq 'Invalid API Key'
-
     end 
   end 
 end
