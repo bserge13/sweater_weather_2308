@@ -1,7 +1,6 @@
 class RoadTripFacade
   def self.get_road_trip(origin, destination)
     directions = MapQuestService.trip_directions(origin, destination)
-    # require 'pry'; binding.pry
     if directions[:route].has_key?(:routeError)
       RoadTrip.new(origin, destination, 'impossible route', {})
     else 

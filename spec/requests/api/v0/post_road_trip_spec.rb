@@ -8,7 +8,7 @@ RSpec.describe 'Post request- road trip' do
   describe 'happy path' do
     it 'creates a new road trip', :vcr do 
       payload = {
-        origin: 'new york, ny',
+        origin: 'new york city, ny',
         destination: 'los angeles, ca',
         api_key: @db_user.api_key
       }
@@ -24,7 +24,7 @@ RSpec.describe 'Post request- road trip' do
       expect(response.status).to eq 201 
 
       trip = JSON.parse(response.body, symbolize_names: true)
-require 'pry'; binding.pry
+
       expect(trip).to be_a Hash 
       expect(trip).to have_key :data 
       expect(trip[:data]).to have_key :id
