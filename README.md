@@ -28,7 +28,6 @@ Sweater Weather is built with these API integerateions
 - [Weather API](https://www.weatherapi.com/)
 - [MapQuest's Geocoding API](https://developer.mapquest.com/documentation/geocoding-api/)
 - [MapQuest’s Directions API](https://developer.mapquest.com/documentation/directions-api/)
-- [OpenLibrary API](https://openlibrary.org/developers/api)
 
 ## <b>Getting Started</b>
 
