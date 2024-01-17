@@ -72,7 +72,7 @@ rails db:{create,migrate}
 - Rails Version 7.0.8
 
 ## Testing
- 
+
 `bundle exec rspec` will run the entire test suite. *All tests are passing at time of writing with 100% coverage.*
 
 The team tested happy paths, sad paths, and edge cases when needed. Error responses were added where applicable.
