@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 16 Jan 2024 20:35:04 GMT
+      - Tue, 16 Jan 2024 21:26:31 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -29,7 +29,7 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Server:
-      - BunnyCDN-IL1-1068
+      - BunnyCDN-IL1-718
       Cdn-Pullzone:
       - '93447'
       Cdn-Uid:
@@ -41,11 +41,11 @@ http_interactions:
       Cache-Control:
       - public, max-age=180
       Via:
-      - 1.1 haproxy-api-1 (Varnish/7.3)
+      - 1.1 varnish (Varnish/6.0)
       X-Weatherapi-Qpm-Left:
-      - '4999950'
+      - '4999945'
       X-Varnish:
-      - '125288809871'
+      - '719949044'
       Cdn-Proxyver:
       - '1.04'
       Cdn-Requestpullsuccess:
@@ -53,20 +53,20 @@ http_interactions:
       Cdn-Requestpullcode:
       - '200'
       Cdn-Cachedat:
-      - 01/16/2024 20:34:50
+      - 01/16/2024 21:25:18
       Cdn-Edgestorageid:
       - '1029'
       Cdn-Status:
       - '200'
       Cdn-Requestid:
-      - 5f01c72c1f87af52c431c21326ac9144
+      - 318dea0cfcc8d7bb4e7f568ee16b040f
       Cdn-Cache:
       - HIT
     body:
       encoding: ASCII-8BIT
       string: '{"location":{"name":"Wadesville","region":"Indiana","country":"United
-        States of America","lat":38.11,"lon":-87.79,"tz_id":"America/Chicago","localtime_epoch":1705437251,"localtime":"2024-01-16
-        14:34"},"current":{"last_updated_epoch":1705437000,"last_updated":"2024-01-16
-        14:30","temp_c":-8.9,"temp_f":16.0,"is_day":1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png","code":1000},"wind_mph":13.6,"wind_kph":22.0,"wind_degree":250,"wind_dir":"WSW","pressure_mb":1024.0,"pressure_in":30.25,"precip_mm":0.0,"precip_in":0.0,"humidity":48,"cloud":0,"feelslike_c":-16.2,"feelslike_f":2.9,"vis_km":16.0,"vis_miles":9.0,"uv":2.0,"gust_mph":18.1,"gust_kph":29.2}}'
-  recorded_at: Tue, 16 Jan 2024 20:35:04 GMT
+        States of America","lat":38.11,"lon":-87.79,"tz_id":"America/Chicago","localtime_epoch":1705440278,"localtime":"2024-01-16
+        15:24"},"current":{"last_updated_epoch":1705439700,"last_updated":"2024-01-16
+        15:15","temp_c":-8.3,"temp_f":17.1,"is_day":1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png","code":1000},"wind_mph":9.4,"wind_kph":15.1,"wind_degree":300,"wind_dir":"WNW","pressure_mb":1024.0,"pressure_in":30.25,"precip_mm":0.0,"precip_in":0.0,"humidity":44,"cloud":0,"feelslike_c":-15.7,"feelslike_f":3.8,"vis_km":16.0,"vis_miles":9.0,"uv":2.0,"gust_mph":14.2,"gust_kph":22.8}}'
+  recorded_at: Tue, 16 Jan 2024 21:26:31 GMT
 recorded_with: VCR 6.2.0
