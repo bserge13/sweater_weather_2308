@@ -38,7 +38,7 @@ To get a local copy, follow these simple instructions
 1. Fork the Project
 2. Clone the repo 
 ``` 
-git clone git@github.com:your_username/sweater_weather.git 
+git clone git@github.com:your_username/sweater_weather_2308.git 
 ```
 3. Install the gems
 ```
